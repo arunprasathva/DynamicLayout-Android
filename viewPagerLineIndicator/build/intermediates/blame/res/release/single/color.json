@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Workspace\\DynamicComponents\\viewPagerLineIndicator\\build\\intermediates\\res\\merged\\release\\color\\vpi__light_theme.xml",
+        "source": "D:\\Workspace\\DynamicComponents\\viewPagerLineIndicator\\src\\main\\res\\color\\vpi__light_theme.xml"
+    },
+    {
+        "merged": "D:\\Workspace\\DynamicComponents\\viewPagerLineIndicator\\build\\intermediates\\res\\merged\\release\\color\\vpi__dark_theme.xml",
+        "source": "D:\\Workspace\\DynamicComponents\\viewPagerLineIndicator\\src\\main\\res\\color\\vpi__dark_theme.xml"
+    },
+    {
+        "merged": "D:\\Workspace\\ANDRIOD-AISLE360\\viewPagerLineIndicator\\build\\intermediates\\res\\merged\\release\\color\\vpi__dark_theme.xml",
+        "source": "D:\\Workspace\\ANDRIOD-AISLE360\\viewPagerLineIndicator\\src\\main\\res\\color\\vpi__dark_theme.xml"
+    },
+    {
+        "merged": "D:\\Workspace\\ANDRIOD-AISLE360\\viewPagerLineIndicator\\build\\intermediates\\res\\merged\\release\\color\\vpi__light_theme.xml",
+        "source": "D:\\Workspace\\ANDRIOD-AISLE360\\viewPagerLineIndicator\\src\\main\\res\\color\\vpi__light_theme.xml"
+    }
+]

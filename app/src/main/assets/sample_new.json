@@ -1,0 +1,222 @@
+{
+	"widget": "StackLayout",
+	"properties": [
+		{
+			"name": "Width",
+			"type": "dimen",
+			"value": "Fill"
+		},
+		{
+			"name": "Height",
+			"type": "dimen",
+			"value": "Fill"
+		},
+		{
+			"name": "orientation",
+			"type": "string",
+			"value": "horizontal"
+		},
+		{
+			"name": "weightSum",
+			"type": "dimen",
+			"value": "10"
+		}
+	],
+	"views": [
+		{
+			"widget": "StackLayout",
+			"properties": [
+				{
+					"name": "Width",
+					"type": "dimen",
+					"value": "Fill"
+				},
+				{
+					"name": "Height",
+					"type": "dimen",
+					"value": "Fill"
+				},
+				{
+					"name": "layout_weight",
+					"type": "float",
+					"value": "50"
+				},
+				{
+					"name": "orientation",
+					"type": "string",
+					"value": "vertical"
+				},
+				{
+					"name": "weightSum",
+					"type": "dimen",
+					"value": "2"
+				}
+			],
+			"views": [
+				{
+					"widget": "ImageView",
+					"properties": [
+						{
+							"name": "layout_weight",
+							"type": "float",
+							"value": "50"
+						},
+						{
+							"name": "Width",
+							"type": "dimen",
+							"value": "Fill"
+						},
+						{
+							"name": "Height",
+							"type": "dimen",
+							"value": "Fill"
+						},
+						{
+							"name": "src",
+							"type": "ref",
+							"value": "beacon_men"
+						},
+						{
+							"name": "scaleType",
+							"type": "string",
+							"value": "FIT_XY"
+						}
+					]
+				},
+				{
+					"widget": "ImageView",
+					"properties": [
+						{
+							"name": "layout_weight",
+							"type": "float",
+							"value": "50"
+						},
+						{
+							"name": "Width",
+							"type": "dimen",
+							"value": "Fill"
+						},
+						{
+							"name": "Height",
+							"type": "dimen",
+							"value": "Fill"
+						},
+						{
+							"name": "src",
+							"type": "ref",
+							"value": "beacon_women"
+						},
+						{
+							"name": "scaleType",
+							"type": "string",
+							"value": "FIT_XY"
+						}
+					]
+				}
+			]
+		}, {
+			"widget": "FlexiLayout",
+			"properties": [
+				{
+					"name": "Width",
+					"type": "dimen",
+					"value": "Fill"
+				},
+				{
+					"name": "Height",
+					"type": "dimen",
+					"value": "Fill"
+				},
+				{
+					"name": "layout_weight",
+					"type": "float",
+					"value": "50"
+				}
+
+			],
+			"views": [
+				{
+					"widget": "ImageView",
+					"properties": [
+						{
+							"name": "Width",
+							"type": "dimen",
+							"value": "Fill"
+						},
+						{
+							"name": "Height",
+							"type": "dimen",
+							"value": "Fill"
+						},
+						{
+							"name": "src",
+							"type": "ref",
+							"value": "place"
+						},
+						{
+							"name": "scaleType",
+							"type": "string",
+							"value": "FIT_XY"
+						}
+					]
+				},
+				{
+					"widget": "ImageView",
+					"properties": [
+						{
+							"name": "Width",
+							"type": "dimen",
+							"value": "auto"
+						},
+						{
+							"name": "Height",
+							"type": "dimen",
+							"value": "auto"
+						},
+						{
+							"name": "src",
+							"type": "ref",
+							"value": "ic_media_play"
+						},
+						{
+							"name": "center",
+							"type": "boolean",
+							"value": "true"
+						}
+					]
+				},
+				{
+					"widget": "Button",
+					"properties": [
+						{
+							"name": "Width",
+							"type": "dimen",
+							"value": "auto"
+						},
+						{
+							"name": "Height",
+							"type": "dimen",
+							"value": "auto"
+						},
+						{
+							"name": "text",
+							"type": "string",
+							"value": "TESTING"
+						},
+						{
+							"name": "center",
+							"type": "boolean",
+							"value": "true"
+						},
+						{
+						"name": "customFont",
+							"type": "string",
+							"value": "http://www.webpagepublicity.com/free-fonts/x/Xanadu.ttf"
+
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DynamicComponents</string>
+    <string name="err_video">Problem in playing video</string>
+    <string name="btn_reconnect_title">Try again</string>
+    <string name="alert_conn_err_title">Network Error</string>
+    <string name="alert_network_error_message">The network is temporarily unavailable.</string>
+    <string name="server_error_msg">Server is not responding</string>
+    <string name="btn_support_title">Email Support</string>
+    <string name="title_activity_login">Sign in</string>
+</resources>

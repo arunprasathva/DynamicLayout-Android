@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textColor="@color/dialog_divider"
+        style="@android:style/TextAppearance.Large"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/dialog_divider"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/server_error_msg"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        app:customFont="RobotoRegular.ttf"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/dialog_bottom_divider_line"/>
+
+    <com.minscapecomputing.aisle360.components.ButtonPlus
+        android:id="@+id/btnSerErrTrytoConnect"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/alert_btn_selector"
+        android:padding="10dp"
+        android:text="@string/btn_reconnect_title"
+        app:customFont="RobotoRegular.ttf"/>
+
+    <com.minscapecomputing.aisle360.components.ButtonPlus
+        android:id="@+id/btnSupportEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btn_support_title"
+        android:visibility="gone"
+        app:customFont="RobotoRegular.ttf"/>
+
+</LinearLayout>

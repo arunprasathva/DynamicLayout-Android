@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.minscapecomputing.dynamiccomponents.SecondActivity">
+
+    <com.minscapecomputing.dynamiccomponents.ButtonPlus
+        android:id="@+id/buttPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="PRINT BILL"
+        app:customFont="/storage/emulated/0/roof-runners-active/PG_Roof Runners_active.ttf"/>
+
+</RelativeLayout>
