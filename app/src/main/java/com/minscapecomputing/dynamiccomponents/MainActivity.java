@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         init();
 
-        getJSON("https://api.myjson.com/bins/a9v83");
+        getJSON("https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/assets/sample.json");
     }
 
     private void getJSON(String URL) {
