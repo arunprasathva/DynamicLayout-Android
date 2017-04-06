@@ -125,7 +125,7 @@
                   {
                     "name": "text",
                     "type": "string",
-                    "value": "SHOW PRODUCTS"
+                    "value": "SHOW PRODUCTS >"
                   },
                   {
                     "name": "layout_alignParentRight",
