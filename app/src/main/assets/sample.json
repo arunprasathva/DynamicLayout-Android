@@ -1,6 +1,6 @@
 [
   {
-    "widget": "android.widget.LinearLayout",
+    "widget": "LinearLayout",
     "properties": [
       {
         "name": "layout_width",
@@ -25,7 +25,7 @@
     ],
     "views": [
       {
-        "widget": "android.widget.LinearLayout",
+        "widget": "LinearLayout",
         "properties": [
           {
             "name": "layout_width",
@@ -55,7 +55,7 @@
         ],
         "views": [
           {
-            "widget": "android.widget.RelativeLayout",
+            "widget": "RelativeLayout",
             "properties": [
               {
                 "name": "layout_width",
@@ -75,7 +75,7 @@
             ],
             "views": [
               {
-                "widget": "android.widget.ImageView",
+                "widget": "ImageView",
                 "properties": [
                   {
                     "name": "layout_width",
@@ -100,7 +100,7 @@
                 ]
               },
               {
-                "widget": "android.widget.Button",
+                "widget": "Button",
                 "properties": [
                   {
                     "name": "layout_width",
@@ -170,7 +170,7 @@
                 ]
               },
               {
-                "widget": "android.widget.TextView",
+                "widget": "TextView",
                 "properties": [
                   {
                     "name": "layout_width",
@@ -217,7 +217,7 @@
             ]
           },
           {
-            "widget": "android.widget.RelativeLayout",
+            "widget": "RelativeLayout",
             "properties": [
               {
                 "name": "layout_width",
@@ -237,7 +237,7 @@
             ],
             "views": [
               {
-                "widget": "android.widget.ImageView",
+                "widget": "ImageView",
                 "properties": [
                   {
                     "name": "layout_width",
@@ -262,7 +262,7 @@
                 ]
               },
               {
-                "widget": "android.widget.TextView",
+                "widget": "TextView",
                 "properties": [
                   {
                     "name": "layout_width",
@@ -321,7 +321,7 @@
         ]
       },
       {
-        "widget": "android.widget.RelativeLayout",
+        "widget": "RelativeLayout",
         "properties": [
           {
             "name": "layout_width",
@@ -351,7 +351,7 @@
         ],
         "views": [
           {
-            "widget": "android.widget.ImageView",
+            "widget": "ImageView",
             "properties": [
               {
                 "name": "layout_width",
@@ -376,7 +376,7 @@
             ]
           },
           {
-            "widget": "android.widget.ImageView",
+            "widget": "ImageView",
             "properties": [
               {
                 "name": "layout_width",
@@ -405,7 +405,7 @@
     ]
   },
   {
-    "widget": "android.widget.LinearLayout",
+    "widget": "LinearLayout",
     "properties": [
       {
         "name": "layout_width",
@@ -430,7 +430,7 @@
     ],
     "views": [
       {
-        "widget": "android.widget.RelativeLayout",
+        "widget": "RelativeLayout",
         "properties": [
           {
             "name": "layout_width",
@@ -460,7 +460,7 @@
         ],
         "views": [
           {
-            "widget": "android.widget.ImageView",
+            "widget": "ImageView",
             "properties": [
               {
                 "name": "layout_width",
@@ -485,7 +485,7 @@
             ]
           },
           {
-            "widget": "android.widget.ImageView",
+            "widget": "ImageView",
             "properties": [
               {
                 "name": "layout_width",
@@ -512,7 +512,7 @@
         ]
       },
       {
-        "widget": "android.widget.LinearLayout",
+        "widget": "LinearLayout",
         "properties": [
           {
             "name": "layout_width",
@@ -542,7 +542,7 @@
         ],
         "views": [
           {
-            "widget": "android.widget.RelativeLayout",
+            "widget": "RelativeLayout",
             "properties": [
               {
                 "name": "layout_width",
@@ -562,7 +562,7 @@
             ],
             "views": [
               {
-                "widget": "android.widget.ImageView",
+                "widget": "ImageView",
                 "properties": [
                   {
                     "name": "layout_width",
@@ -587,7 +587,7 @@
                 ]
               },
               {
-                "widget": "android.widget.Button",
+                "widget": "Button",
                 "properties": [
                   {
                     "name": "layout_width",
@@ -657,7 +657,7 @@
                 ]
               },
               {
-                "widget": "android.widget.TextView",
+                "widget": "TextView",
                 "properties": [
                   {
                     "name": "layout_width",
@@ -704,7 +704,7 @@
             ]
           },
           {
-            "widget": "android.widget.RelativeLayout",
+            "widget": "RelativeLayout",
             "properties": [
               {
                 "name": "layout_width",
@@ -724,7 +724,7 @@
             ],
             "views": [
               {
-                "widget": "android.widget.ImageView",
+                "widget": "ImageView",
                 "properties": [
                   {
                     "name": "layout_width",
@@ -749,7 +749,7 @@
                 ]
               },
               {
-                "widget": "android.widget.TextView",
+                "widget": "TextView",
                 "properties": [
                   {
                     "name": "layout_width",
@@ -810,7 +810,7 @@
     ]
   },
   {
-    "widget": "android.widget.LinearLayout",
+    "widget": "LinearLayout",
     "properties": [
       {
         "name": "layout_width",
@@ -835,7 +835,7 @@
     ],
     "views": [
       {
-        "widget": "android.widget.ImageView",
+        "widget": "ImageView",
         "properties": [
           {
             "name": "layout_width",
@@ -865,7 +865,7 @@
         ]
       },
       {
-        "widget": "android.widget.ImageView",
+        "widget": "ImageView",
         "properties": [
           {
             "name": "layout_width",
@@ -895,7 +895,7 @@
         ]
       },
       {
-        "widget": "android.widget.ImageView",
+        "widget": "ImageView",
         "properties": [
           {
             "name": "layout_width",
@@ -927,7 +927,7 @@
     ]
   },
   {
-    "widget": "android.widget.ImageView",
+    "widget": "ImageView",
     "properties": [
       {
         "name": "layout_width",
