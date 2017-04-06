@@ -212,7 +212,7 @@ public class DynamicHelper {
                         params.height = dynProp.getValueInt();
                     }
                     break;
-                    case LAYOUT_WIDTHHHH: {
+                    case LAYOUT_WIDTH: {
                         params.width = dynProp.getValueInt();
                     }
                     break;

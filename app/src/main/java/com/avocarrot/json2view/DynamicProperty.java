@@ -48,7 +48,7 @@ public class DynamicProperty {
     public enum NAME {
         NO_VALID,
         ID,
-        LAYOUT_WIDTHHHH,
+        LAYOUT_WIDTH,
         LAYOUT_HEIGHT,
         PADDING_LEFT,
         PADDING_RIGHT,
