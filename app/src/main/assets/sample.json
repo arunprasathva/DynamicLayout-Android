@@ -372,7 +372,7 @@
                 "name": "scaleType",
                 "type": "string",
                 "value": "FIT_XY"
-              }
+              }, { "name": "border", "type": "color", "value": "#000000" }
             ]
           },
           {
@@ -948,11 +948,6 @@
         "name": "scaleType",
         "type": "string",
         "value": "FIT_XY"
-      },
-      {
-        "name": "border",
-        "type": "color",
-        "value": "#000000"
       }
     ]
   }
