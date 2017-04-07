@@ -951,7 +951,7 @@
       },
       {
         "name": "border",
-        "type": "string",
+        "type": "color",
         "value": "#000000"
       }
     ]
