@@ -948,6 +948,11 @@
         "name": "scaleType",
         "type": "string",
         "value": "FIT_XY"
+      },
+      {
+        "name": "border",
+        "type": "string",
+        "value": "#000000"
       }
     ]
   }
