@@ -196,7 +196,10 @@ public class DynamicView {
 
         /*switch (widgetName) {
 
-            case
+            case "LinearLayout":
+                break;
+            case "RelativeLayout":
+                break;
         }*/
 
         if (!widgetName.contains(".")) {
@@ -205,5 +208,4 @@ public class DynamicView {
         
         return actualWidgetName;
     }
-
 }

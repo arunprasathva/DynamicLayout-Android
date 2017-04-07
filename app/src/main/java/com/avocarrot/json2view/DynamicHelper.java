@@ -14,8 +14,11 @@ import java.util.List;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
+import android.os.Build;
 import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -141,6 +144,10 @@ public class DynamicHelper {
                 break;
                 case DRAWABLERIGHT: {
                     applyCompoundDrawable(view, dynProp, 2);
+                }
+                break;
+                case BORDER: {
+                    applyBorder(view, dynProp);
                 }
                 break;
                 case DRAWABLEBOTTOM: {
@@ -715,6 +722,23 @@ public class DynamicHelper {
                 }
                 break;
             }
+        }
+    }
+
+    public static void applyBorder(View view, DynamicProperty property) {
+
+        try {
+            GradientDrawable border = new GradientDrawable();
+            border.setColor(Color.TRANSPARENT);
+            border.setStroke(3, property.getValueColor());
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
+                view.setBackgroundDrawable(border);
+            } else {
+                view.setBackground(border);
+            }
+            view.setPadding(3, 3, 3, 3);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

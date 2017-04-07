@@ -81,6 +81,7 @@ public class DynamicProperty {
         DRAWABLEBOTTOM,
         DRAWABLELEFT,
         DRAWABLERIGHT,
+        BORDER,
         /* imageView */
         SRC,
         SCALETYPE,
