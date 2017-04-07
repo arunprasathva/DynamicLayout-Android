@@ -15,918 +15,11 @@
       {
         "name": "orientation",
         "type": "string",
-        "value": "horizontal"
-      },
-      {
-        "name": "weightSum",
-        "type": "dimen",
-        "value": "10"
+        "value": "vertical"
       }
     ],
     "views": [
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_weight",
-            "type": "float",
-            "value": "5"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "vertical"
-          },
-          {
-            "name": "weightSum",
-            "type": "dimen",
-            "value": "2"
-          }
-        ],
-        "views": [
-          {
-            "widget": "RelativeLayout",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_weight",
-                "type": "float",
-                "value": "1"
-              }
-            ],
-            "views": [
-              {
-                "widget": "ImageView",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "match_parent"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "match_parent"
-                  },
-                  {
-                    "name": "src",
-                    "type": "uri",
-                    "value": "http://www.ikeahackers.net/wp-content/uploads/2013/09/2013-08-25-140805-500x350.jpg"
-                  },
-                  {
-                    "name": "scaleType",
-                    "type": "string",
-                    "value": "FIT_XY"
-                  }
-                ]
-              },
-              {
-                "widget": "Button",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "id",
-                    "type": "",
-                    "value": "buttonClick"
-                  },
-                  {
-                    "name": "bounce",
-                    "type": "",
-                    "value": "catalogue"
-                  },
-                  {
-                    "name": "text",
-                    "type": "string",
-                    "value": "SHOW PRODUCTS >"
-                  },
-                  {
-                    "name": "layout_alignParentRight",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_alignParentBottom",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_margin",
-                    "type": "dimen",
-                    "value": "25"
-                  },
-                  {
-                    "name": "background",
-                    "type": "color",
-                    "value": "#000000"
-                  },
-                  {
-                    "name": "textColor",
-                    "type": "color",
-                    "value": "#ffffff"
-                  },
-                  {
-                    "name": "minHeight",
-                    "type": "dimen",
-                    "value": "0"
-                  },
-                  {
-                    "name": "minWidth",
-                    "type": "dimen",
-                    "value": "0"
-                  },
-                  {
-                    "name": "padding",
-                    "type": "dimen",
-                    "value": "10"
-                  }
-                ]
-              },
-              {
-                "widget": "TextView",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "text",
-                    "type": "string",
-                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-                  },
-                  {
-                    "name": "layout_alignParentLeft",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_alignParentBottom",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_margin",
-                    "type": "dimen",
-                    "value": "25"
-                  },
-                  {
-                    "name": "textColor",
-                    "type": "color",
-                    "value": "#000000"
-                  },
-                  {
-                    "name": "layout_toLeftOf",
-                    "type": "string",
-                    "value": "buttonClick"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "widget": "RelativeLayout",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_weight",
-                "type": "float",
-                "value": "1"
-              }
-            ],
-            "views": [
-              {
-                "widget": "ImageView",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "match_parent"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "match_parent"
-                  },
-                  {
-                    "name": "src",
-                    "type": "uri",
-                    "value": "http://edward-thackray.co.uk/wp-content/uploads/2016/07/other-banner-1.jpg"
-                  },
-                  {
-                    "name": "scaleType",
-                    "type": "string",
-                    "value": "FIT_XY"
-                  }
-                ]
-              },
-              {
-                "widget": "TextView",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "200"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "text",
-                    "type": "string",
-                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-                  },
-                  {
-                    "name": "layout_alignParentRight",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_centerVertical",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_margin",
-                    "type": "dimen",
-                    "value": "25"
-                  },
-                  {
-                    "name": "padding",
-                    "type": "dimen",
-                    "value": "10"
-                  },
-                  {
-                    "name": "textColor",
-                    "type": "color",
-                    "value": "#ffffff"
-                  },
-                  {
-                    "name": "background",
-                    "type": "color",
-                    "value": "#80000000"
-                  },
-                  {
-                    "name": "layout_toLeftOf",
-                    "type": "string",
-                    "value": "buttonClick"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "widget": "RelativeLayout",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_weight",
-            "type": "float",
-            "value": "5"
-          },
-          {
-            "name": "id",
-            "type": "",
-            "value": "videoClick"
-          },
-          {
-            "name": "VIDEO_URL",
-            "type": "",
-            "value": "https://d2w4f1uwlq2g3.cloudfront.net/live/tenant_cdn_content/S1601001/prod_catalog/video/ethnic_wear_500.mp4"
-          }
-        ],
-        "views": [
-          {
-            "widget": "ImageView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "src",
-                "type": "uri",
-                "value": "https://gfxtra.unblockall.xyz/uploads/posts/2016-06/1465997661_content-.jpg"
-              },
-              {
-                "name": "scaleType",
-                "type": "string",
-                "value": "FIT_XY"
-              }, { "name": "border", "type": "color", "value": "#000000" }
-            ]
-          },
-          {
-            "widget": "ImageView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "src",
-                "type": "ref",
-                "value": "@drawable/ic_beacon_play"
-              },
-              {
-                "name": "layout_centerInParent",
-                "type": "boolean",
-                "value": "true"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "widget": "LinearLayout",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "orientation",
-        "type": "string",
-        "value": "horizontal"
-      },
-      {
-        "name": "weightSum",
-        "type": "dimen",
-        "value": "10"
-      }
-    ],
-    "views": [
-      {
-        "widget": "RelativeLayout",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_weight",
-            "type": "float",
-            "value": "5"
-          },
-          {
-            "name": "id",
-            "type": "",
-            "value": "videoClick"
-          },
-          {
-            "name": "VIDEO_URL",
-            "type": "",
-            "value": "https://d2w4f1uwlq2g3.cloudfront.net/live/tenant_cdn_content/S1601001/prod_catalog/video/ethnic_wear_500.mp4"
-          }
-        ],
-        "views": [
-          {
-            "widget": "ImageView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "src",
-                "type": "uri",
-                "value": "https://gfxtra.unblockall.xyz/uploads/posts/2016-06/1465997661_content-.jpg"
-              },
-              {
-                "name": "scaleType",
-                "type": "string",
-                "value": "FIT_XY"
-              }
-            ]
-          },
-          {
-            "widget": "ImageView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "src",
-                "type": "ref",
-                "value": "@drawable/ic_beacon_play"
-              },
-              {
-                "name": "layout_centerInParent",
-                "type": "boolean",
-                "value": "true"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_weight",
-            "type": "float",
-            "value": "5"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "vertical"
-          },
-          {
-            "name": "weightSum",
-            "type": "dimen",
-            "value": "2"
-          }
-        ],
-        "views": [
-          {
-            "widget": "RelativeLayout",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_weight",
-                "type": "float",
-                "value": "1"
-              }
-            ],
-            "views": [
-              {
-                "widget": "ImageView",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "match_parent"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "match_parent"
-                  },
-                  {
-                    "name": "src",
-                    "type": "uri",
-                    "value": "http://www.ikeahackers.net/wp-content/uploads/2013/09/2013-08-25-140805-500x350.jpg"
-                  },
-                  {
-                    "name": "scaleType",
-                    "type": "string",
-                    "value": "FIT_XY"
-                  }
-                ]
-              },
-              {
-                "widget": "Button",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "id",
-                    "type": "",
-                    "value": "buttonClick"
-                  },
-                  {
-                    "name": "bounce",
-                    "type": "",
-                    "value": "catalogue"
-                  },
-                  {
-                    "name": "text",
-                    "type": "string",
-                    "value": "SHOW PRODUCTS"
-                  },
-                  {
-                    "name": "layout_alignParentRight",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_alignParentBottom",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_margin",
-                    "type": "dimen",
-                    "value": "25"
-                  },
-                  {
-                    "name": "background",
-                    "type": "color",
-                    "value": "#000000"
-                  },
-                  {
-                    "name": "textColor",
-                    "type": "color",
-                    "value": "#ffffff"
-                  },
-                  {
-                    "name": "minHeight",
-                    "type": "dimen",
-                    "value": "0"
-                  },
-                  {
-                    "name": "minWidth",
-                    "type": "dimen",
-                    "value": "0"
-                  },
-                  {
-                    "name": "padding",
-                    "type": "dimen",
-                    "value": "10"
-                  }
-                ]
-              },
-              {
-                "widget": "TextView",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "text",
-                    "type": "string",
-                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-                  },
-                  {
-                    "name": "layout_alignParentLeft",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_alignParentBottom",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_margin",
-                    "type": "dimen",
-                    "value": "25"
-                  },
-                  {
-                    "name": "textColor",
-                    "type": "color",
-                    "value": "#000000"
-                  },
-                  {
-                    "name": "layout_toLeftOf",
-                    "type": "string",
-                    "value": "buttonClick"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "widget": "RelativeLayout",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_weight",
-                "type": "float",
-                "value": "1"
-              }
-            ],
-            "views": [
-              {
-                "widget": "ImageView",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "match_parent"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "match_parent"
-                  },
-                  {
-                    "name": "src",
-                    "type": "uri",
-                    "value": "http://edward-thackray.co.uk/wp-content/uploads/2016/07/other-banner-1.jpg"
-                  },
-                  {
-                    "name": "scaleType",
-                    "type": "string",
-                    "value": "FIT_XY"
-                  }
-                ]
-              },
-              {
-                "widget": "TextView",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "200"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "text",
-                    "type": "string",
-                    "value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-                  },
-                  {
-                    "name": "layout_alignParentRight",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_centerVertical",
-                    "type": "boolean",
-                    "value": "true"
-                  },
-                  {
-                    "name": "layout_margin",
-                    "type": "dimen",
-                    "value": "25"
-                  },
-                  {
-                    "name": "padding",
-                    "type": "dimen",
-                    "value": "10"
-                  },
-                  {
-                    "name": "textColor",
-                    "type": "color",
-                    "value": "#ffffff"
-                  },
-                  {
-                    "name": "background",
-                    "type": "color",
-                    "value": "#80000000"
-                  },
-                  {
-                    "name": "layout_toLeftOf",
-                    "type": "string",
-                    "value": "buttonClick"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "widget": "LinearLayout",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "orientation",
-        "type": "string",
-        "value": "horizontal"
-      },
-      {
-        "name": "weightSum",
-        "type": "dimen",
-        "value": "3"
-      }
-    ],
-    "views": [
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "https://designedbyidham.files.wordpress.com/2012/02/h2b_retail_comm_banners3.jpg"
-          },
-          {
-            "name": "scaleType",
-            "type": "string",
-            "value": "FIT_XY"
-          },
-          {
-            "name": "layout_weight",
-            "type": "float",
-            "value": "1"
-          }
-        ]
-      },
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "https://designedbyidham.files.wordpress.com/2012/02/h2b_retail_comm_banners5.jpg"
-          },
-          {
-            "name": "scaleType",
-            "type": "string",
-            "value": "FIT_XY"
-          },
-          {
-            "name": "layout_weight",
-            "type": "float",
-            "value": "1"
-          }
-        ]
-      },
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "https://designedbyidham.files.wordpress.com/2012/02/h2b_retail_comm_banners1.jpg"
-          },
-          {
-            "name": "scaleType",
-            "type": "string",
-            "value": "FIT_XY"
-          },
-          {
-            "name": "layout_weight",
-            "type": "float",
-            "value": "1"
-          }
-        ]
-      }
-    ]
-  },
-  {
+{
     "widget": "ImageView",
     "properties": [
       {
@@ -942,7 +35,7 @@
       {
         "name": "src",
         "type": "uri",
-        "value": "http://static8.depositphotos.com/1006829/990/i/950/depositphotos_9902789-stock-photo-red-christmas-special-offer-sales.jpg"
+        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn001.jpg"
       },
       {
         "name": "scaleType",
@@ -951,4 +44,184 @@
       }
     ]
   }
-]
+      ]},{
+    "widget": "LinearLayout",
+    "properties": [
+      {
+        "name": "layout_width",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "layout_height",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "orientation",
+        "type": "string",
+        "value": "vertical"
+      }
+    ],
+    "views": [
+{
+    "widget": "ImageView",
+    "properties": [
+      {
+        "name": "layout_width",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "layout_height",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "src",
+        "type": "uri",
+        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn002.jpg"
+      },
+      {
+        "name": "scaleType",
+        "type": "string",
+        "value": "FIT_XY"
+      }
+    ]
+  }
+      ]},{
+    "widget": "LinearLayout",
+    "properties": [
+      {
+        "name": "layout_width",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "layout_height",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "orientation",
+        "type": "string",
+        "value": "vertical"
+      }
+    ],
+    "views": [
+{
+    "widget": "ImageView",
+    "properties": [
+      {
+        "name": "layout_width",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "layout_height",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "src",
+        "type": "uri",
+        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn003.jpg"
+      },
+      {
+        "name": "scaleType",
+        "type": "string",
+        "value": "FIT_XY"
+      }
+    ]
+  }
+      ]},{
+    "widget": "LinearLayout",
+    "properties": [
+      {
+        "name": "layout_width",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "layout_height",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "orientation",
+        "type": "string",
+        "value": "vertical"
+      }
+    ],
+    "views": [
+{
+    "widget": "ImageView",
+    "properties": [
+      {
+        "name": "layout_width",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "layout_height",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "src",
+        "type": "uri",
+        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn004.jpg"
+      },
+      {
+        "name": "scaleType",
+        "type": "string",
+        "value": "FIT_XY"
+      }
+    ]
+  }
+      ]},{
+    "widget": "LinearLayout",
+    "properties": [
+      {
+        "name": "layout_width",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "layout_height",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "orientation",
+        "type": "string",
+        "value": "vertical"
+      }
+    ],
+    "views": [
+{
+    "widget": "ImageView",
+    "properties": [
+      {
+        "name": "layout_width",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "layout_height",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "src",
+        "type": "uri",
+        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn005.jpg"
+      },
+      {
+        "name": "scaleType",
+        "type": "string",
+        "value": "FIT_XY"
+      }
+    ]
+  }
+      ]}]
