@@ -38,6 +38,40 @@
             "value": "FIT_XY"
           }
         ]
+      },{
+        "widget": "ImageView",
+        "properties": [
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "50dp"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "50dp"
+          },
+          {
+            "name": "src",
+            "type": "uri",
+            "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
+          },
+          {
+            "name": "layout_alignparentright",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "layout_alignparenttop",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "layout_margin",
+            "type": "dimen",
+            "value": "50dp"
+          }
+        ]
       },
       {
         "widget": "LinearLayout",
@@ -70,7 +104,7 @@
           {
             "name": "layout_margin",
             "type": "dimen",
-            "value": "30dp"
+            "value": "50dp"
           }
         ],
         "views": [
