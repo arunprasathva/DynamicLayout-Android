@@ -405,8 +405,8 @@
       },
       {
         "name": "background",
-        "type": "uri",
-        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn005_bg.jpg"
+        "type": "color",
+        "value": "#000000"
       }
     ],
     "views": [
@@ -428,6 +428,11 @@
             "type": "color",
             "value": "#ffffff",
             "radius": "5dp"
+          },
+          {
+            "name": "background",
+            "type": "uri",
+            "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn005_bg.jpg"
           },
           {
             "name": "layout_margin",
