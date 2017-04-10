@@ -736,7 +736,9 @@ public class DynamicHelper {
             } else {
                 view.setBackground(border);
             }
-            view.setPadding(3, 3, 3, 3);
+            int margin = property.getValueBorderColorRadius();
+            if (margin != -1)
+                view.setPadding(margin, margin, margin, margin);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -38,7 +38,8 @@
             "value": "FIT_XY"
           }
         ]
-      },{
+      },
+      {
         "widget": "ImageView",
         "properties": [
           {
@@ -382,6 +383,191 @@
                     "value": "1"
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "widget": "RelativeLayout",
+    "properties": [
+      {
+        "name": "layout_width",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "layout_height",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "background",
+        "type": "uri",
+        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn005_bg.jpg"
+      }
+    ],
+    "views": [
+      {
+        "widget": "ImageView",
+        "properties": [
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "match_parent"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "match_parent"
+          },
+          {
+            "name": "border",
+            "type": "color",
+            "value": "#ffffff",
+            "radius": "5dp"
+          },
+          {
+            "name": "layout_margin",
+            "type": "dimen",
+            "value": "100dp"
+          }
+        ]
+      },
+      {
+        "widget": "ImageView",
+        "properties": [
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "50dp"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "50dp"
+          },
+          {
+            "name": "src",
+            "type": "uri",
+            "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
+          },
+          {
+            "name": "layout_alignparentright",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "layout_alignparenttop",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "layout_margin",
+            "type": "dimen",
+            "value": "150dp"
+          }
+        ]
+      },
+      {
+        "widget": "LinearLayout",
+        "properties": [
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "wrap_content"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "wrap_content"
+          },
+          {
+            "name": "orientation",
+            "type": "string",
+            "value": "vertical"
+          },
+          {
+            "name": "layout_alignparentleft",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "layout_centervertical",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "layout_margin",
+            "type": "dimen",
+            "value": "150dp"
+          }
+        ],
+        "views": [
+          {
+            "widget": "TextView",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "value": "DID YOU \nKNOW?"
+              },
+              {
+                "name": "textSize",
+                "type": "dimen",
+                "value": "35sp"
+              },
+              {
+                "name": "textColor",
+                "type": "color",
+                "value": "#ffffff"
+              }
+            ]
+          },
+          {
+            "widget": "TextView",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "value": "LADY CURZON, VICERINE OF INDIA, WAS INSTRUMENTAL IN \nPROMOTING THE USE OF INDIAN EMBROIDERY IN \nWESTERN FASHION. \nHER PEACOCK GOWN, STITCHED OF GOLD CLOTH AND\nEMBROIDERED IN ZARDOZI WAS TREMENDOUS\nSENSATION AT HER CORONATION CEREMONY!"
+              },
+              {
+                "name": "textSize",
+                "type": "dimen",
+                "value": "15sp"
+              },
+              {
+                "name": "textColor",
+                "type": "color",
+                "value": "#ffffff"
+              },
+              {
+                "name": "layout_margintop",
+                "type": "dimen",
+                "value": "15dp"
               }
             ]
           }

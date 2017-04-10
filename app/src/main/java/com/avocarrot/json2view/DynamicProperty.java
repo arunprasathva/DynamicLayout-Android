@@ -123,6 +123,7 @@ public class DynamicProperty {
     public NAME name;
     public TYPE type;
     private Object value;
+    private Object radius;
 
     /**
      * @param v value to convert as string
@@ -239,6 +240,8 @@ public class DynamicProperty {
         }
         try {
             value = convertValue(jsonObject.get("value"));
+        } catch (Exception e) {}try {
+            radius = convertValue(jsonObject.optString("radius"));
         } catch (Exception e) {}
     }
 
@@ -277,6 +280,11 @@ public class DynamicProperty {
 
     public int getValueColor() {
         if (type == TYPE.COLOR) return Integer.class.cast(value);
+        return -1;
+    }
+
+    public int getValueBorderColorRadius() {
+        if (type == TYPE.COLOR) return Integer.class.cast(radius);
         return -1;
     }
 
