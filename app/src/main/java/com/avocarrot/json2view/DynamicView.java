@@ -189,23 +189,23 @@ public class DynamicView {
         return view;
 
     }
-    
+
     private static String getWidget(String widgetName) {
-        
+
         String actualWidgetName = widgetName;
 
-        /*switch (widgetName) {
-
-            case "LinearLayout":
-                break;
-            case "RelativeLayout":
-                break;
-        }*/
-
         if (!widgetName.contains(".")) {
-            actualWidgetName = "android.widget." + widgetName;
+            switch (widgetName) {
+
+                case "View":
+                    actualWidgetName = "android.view." + widgetName;
+                    break;
+                default:
+                    actualWidgetName = "android.widget." + widgetName;
+                    break;
+            }
         }
-        
+
         return actualWidgetName;
     }
 }

@@ -1,6 +1,6 @@
 [
   {
-    "widget": "LinearLayout",
+    "widget": "RelativeLayout",
     "properties": [
       {
         "name": "layout_width",
@@ -11,217 +11,348 @@
         "name": "layout_height",
         "type": "dimen",
         "value": "match_parent"
-      },
-      {
-        "name": "orientation",
-        "type": "string",
-        "value": "vertical"
       }
     ],
     "views": [
-{
-    "widget": "ImageView",
-    "properties": [
       {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
+        "widget": "ImageView",
+        "properties": [
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "match_parent"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "match_parent"
+          },
+          {
+            "name": "src",
+            "type": "uri",
+            "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn001_bg.jpg"
+          },
+          {
+            "name": "scaleType",
+            "type": "string",
+            "value": "FIT_XY"
+          }
+        ]
       },
       {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "src",
-        "type": "uri",
-        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn001.jpg"
-      },
-      {
-        "name": "scaleType",
-        "type": "string",
-        "value": "FIT_XY"
+        "widget": "LinearLayout",
+        "properties": [
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "wrap_content"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "wrap_content"
+          },
+          {
+            "name": "orientation",
+            "type": "string",
+            "value": "vertical"
+          },
+          {
+            "name": "layout_alignparentright",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "layout_alignparentbottom",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "layout_margin",
+            "type": "dimen",
+            "value": "30dp"
+          }
+        ],
+        "views": [
+          {
+            "widget": "TextView",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "value": "THE OCCASION COLLECTION"
+              },
+              {
+                "name": "textSize",
+                "type": "dimen",
+                "value": "35sp"
+              },
+              {
+                "name": "textColor",
+                "type": "color",
+                "value": "#EDE8BB"
+              },
+              {
+                "name": "maxLines",
+                "type": "value",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "widget": "View",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "match_parent"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "1dp"
+              },
+              {
+                "name": "layout_margintop",
+                "type": "dimen",
+                "value": "2dp"
+              },
+              {
+                "name": "background",
+                "type": "color",
+                "value": "#EDE8BB"
+              }
+            ]
+          },
+          {
+            "widget": "TextView",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "value": "THE QUIET WHISPER AT A FORMAL EVENING"
+              },
+              {
+                "name": "textSize",
+                "type": "dimen",
+                "value": "22sp"
+              },
+              {
+                "name": "textColor",
+                "type": "color",
+                "value": "#EDE8BB"
+              },
+              {
+                "name": "maxLines",
+                "type": "value",
+                "value": "1"
+              },
+              {
+                "name": "LAYOUT_MARGINTOP",
+                "type": "dimen",
+                "value": "5dp"
+              }
+            ]
+          },
+          {
+            "widget": "LinearLayout",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "orientation",
+                "type": "string",
+                "value": "horizontal"
+              },
+              {
+                "name": "layout_marginTop",
+                "type": "dimen",
+                "value": "10dp"
+              }
+            ],
+            "views": [
+              {
+                "widget": "TextView",
+                "properties": [
+                  {
+                    "name": "layout_width",
+                    "type": "dimen",
+                    "value": "wrap_content"
+                  },
+                  {
+                    "name": "layout_height",
+                    "type": "dimen",
+                    "value": "wrap_content"
+                  },
+                  {
+                    "name": "text",
+                    "type": "string",
+                    "value": "ZARDOZI"
+                  },
+                  {
+                    "name": "textColor",
+                    "type": "color",
+                    "value": "#EDE8BB"
+                  },
+                  {
+                    "name": "maxLines",
+                    "type": "value",
+                    "value": "1"
+                  }
+                ]
+              },
+              {
+                "widget": "View",
+                "properties": [
+                  {
+                    "name": "layout_width",
+                    "type": "dimen",
+                    "value": "1dp"
+                  },
+                  {
+                    "name": "layout_height",
+                    "type": "dimen",
+                    "value": "match_parent"
+                  },
+                  {
+                    "name": "layout_marginleft",
+                    "type": "dimen",
+                    "value": "5dp"
+                  },
+                  {
+                    "name": "background",
+                    "type": "color",
+                    "value": "#EDE8BB"
+                  }
+                ]
+              },
+              {
+                "widget": "TextView",
+                "properties": [
+                  {
+                    "name": "layout_width",
+                    "type": "dimen",
+                    "value": "wrap_content"
+                  },
+                  {
+                    "name": "layout_height",
+                    "type": "dimen",
+                    "value": "wrap_content"
+                  },
+                  {
+                    "name": "text",
+                    "type": "string",
+                    "value": "TUSSAR"
+                  },
+                  {
+                    "name": "layout_marginleft",
+                    "type": "dimen",
+                    "value": "5dp"
+                  },
+                  {
+                    "name": "textColor",
+                    "type": "color",
+                    "value": "#EDE8BB"
+                  },
+                  {
+                    "name": "maxLines",
+                    "type": "value",
+                    "value": "1"
+                  }
+                ]
+              },
+              {
+                "widget": "View",
+                "properties": [
+                  {
+                    "name": "layout_width",
+                    "type": "dimen",
+                    "value": "1dp"
+                  },
+                  {
+                    "name": "layout_height",
+                    "type": "dimen",
+                    "value": "match_parent"
+                  },
+                  {
+                    "name": "layout_marginleft",
+                    "type": "dimen",
+                    "value": "5dp"
+                  },
+                  {
+                    "name": "background",
+                    "type": "color",
+                    "value": "#EDE8BB"
+                  }
+                ]
+              },
+              {
+                "widget": "TextView",
+                "properties": [
+                  {
+                    "name": "layout_width",
+                    "type": "dimen",
+                    "value": "wrap_content"
+                  },
+                  {
+                    "name": "layout_height",
+                    "type": "dimen",
+                    "value": "wrap_content"
+                  },
+                  {
+                    "name": "text",
+                    "type": "string",
+                    "value": "HANDWOVEN"
+                  },
+                  {
+                    "name": "layout_marginleft",
+                    "type": "dimen",
+                    "value": "5dp"
+                  },
+                  {
+                    "name": "textColor",
+                    "type": "color",
+                    "value": "#EDE8BB"
+                  },
+                  {
+                    "name": "maxLines",
+                    "type": "value",
+                    "value": "1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }
-      ]},{
-    "widget": "LinearLayout",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "orientation",
-        "type": "string",
-        "value": "vertical"
-      }
-    ],
-    "views": [
-{
-    "widget": "ImageView",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "src",
-        "type": "uri",
-        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn002.jpg"
-      },
-      {
-        "name": "scaleType",
-        "type": "string",
-        "value": "FIT_XY"
-      }
-    ]
-  }
-      ]},{
-    "widget": "LinearLayout",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "orientation",
-        "type": "string",
-        "value": "vertical"
-      }
-    ],
-    "views": [
-{
-    "widget": "ImageView",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "src",
-        "type": "uri",
-        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn003.jpeg"
-      },
-      {
-        "name": "scaleType",
-        "type": "string",
-        "value": "FIT_XY"
-      }
-    ]
-  }
-      ]},{
-    "widget": "LinearLayout",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "orientation",
-        "type": "string",
-        "value": "vertical"
-      }
-    ],
-    "views": [
-{
-    "widget": "ImageView",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "src",
-        "type": "uri",
-        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn004.jpg"
-      },
-      {
-        "name": "scaleType",
-        "type": "string",
-        "value": "FIT_XY"
-      }
-    ]
-  }
-      ]},{
-    "widget": "LinearLayout",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "orientation",
-        "type": "string",
-        "value": "vertical"
-      }
-    ],
-    "views": [
-{
-    "widget": "ImageView",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "src",
-        "type": "uri",
-        "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn005.jpg"
-      },
-      {
-        "name": "scaleType",
-        "type": "string",
-        "value": "FIT_XY"
-      }
-    ]
-  }
-      ]}]
+]

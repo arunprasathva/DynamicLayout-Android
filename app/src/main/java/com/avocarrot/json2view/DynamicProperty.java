@@ -292,6 +292,8 @@ public class DynamicProperty {
             return Integer.class.cast(value);
         else if (value instanceof Float)
             return (int) getValueFloat();
+        else if (value instanceof String)
+            return Integer.parseInt(String.class.cast(value));
         else
             return (int) value;
     }
