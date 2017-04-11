@@ -43,15 +43,15 @@ public class MainActivity extends AppCompatActivity {
 
         init();
 
-        try {
+        /*try {
 
             JSONArray jsonArray = new JSONArray(readFile("sample.json", this));
             setPagerAdapter(jsonArray);
         } catch (JSONException je) {
             je.printStackTrace();
-        }
+        }*/
 
-//        getJSON("https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/assets/sample.json");
+        getJSON("https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/assets/sample.json");
     }
 
     private void getJSON(String URL) {
