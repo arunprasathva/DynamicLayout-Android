@@ -396,7 +396,19 @@ public class DynamicHelper {
                     break;
                     case CUSTOM_FONT: {
                         String fontPath = dynProp.getValueFont();
-                        ((Button) view).setTypeface(Typeface.createFromFile(fontPath));
+                        Typeface typeFace = null;
+                        if (dynProp.type == DynamicProperty.TYPE.FILE) {
+                            typeFace = Typeface.createFromFile(fontPath);
+                        } else if (dynProp.type == DynamicProperty.TYPE.ASSET) {
+                            typeFace = Typeface.createFromAsset(view.getContext().getAssets(),fontPath);
+                        }
+
+                        if (typeFace != null) {
+                            if (view instanceof Button)
+                                ((Button) view).setTypeface(typeFace);
+                            if (view instanceof TextView)
+                                ((TextView) view).setTypeface(typeFace);
+                        }
                     }
                     break;
                 }

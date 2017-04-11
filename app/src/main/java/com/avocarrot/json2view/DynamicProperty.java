@@ -39,7 +39,9 @@ public class DynamicProperty {
         BASE64,
         URI,
         DRAWABLE,
-        JSON
+        JSON,
+        FILE,
+        ASSET
     }
 
     /**

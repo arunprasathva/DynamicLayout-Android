@@ -141,6 +141,11 @@
                 "name": "maxLines",
                 "type": "value",
                 "value": "1"
+              },
+              {
+                "name": "custom_font",
+                "type": "asset",
+                "value": "TrajanPro-Bold.ttf"
               }
             ]
           },
@@ -203,9 +208,14 @@
                 "value": "1"
               },
               {
-                "name": "LAYOUT_MARGINTOP",
+                "name": "layout_margintop",
                 "type": "dimen",
                 "value": "5dp"
+              },
+              {
+                "name": "custom_font",
+                "type": "asset",
+                "value": "TrajanPro-Regular.ttf"
               }
             ]
           },
@@ -261,6 +271,16 @@
                     "name": "maxLines",
                     "type": "value",
                     "value": "1"
+                  },
+                  {
+                    "name": "custom_font",
+                    "type": "asset",
+                    "value": "TrajanPro-Regular.ttf"
+                  },
+                  {
+                    "name": "textSize",
+                    "type": "dimen",
+                    "value": "13sp"
                   }
                 ]
               },
@@ -321,6 +341,16 @@
                     "name": "maxLines",
                     "type": "value",
                     "value": "1"
+                  },
+                  {
+                    "name": "custom_font",
+                    "type": "asset",
+                    "value": "TrajanPro-Regular.ttf"
+                  },
+                  {
+                    "name": "textSize",
+                    "type": "dimen",
+                    "value": "13sp"
                   }
                 ]
               },
@@ -381,10 +411,593 @@
                     "name": "maxLines",
                     "type": "value",
                     "value": "1"
+                  },
+                  {
+                    "name": "custom_font",
+                    "type": "asset",
+                    "value": "TrajanPro-Regular.ttf"
+                  },
+                  {
+                    "name": "textSize",
+                    "type": "dimen",
+                    "value": "13sp"
                   }
                 ]
               }
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "widget": "android.widget.RelativeLayout",
+    "properties": [
+      {
+        "name": "layout_width",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "layout_height",
+        "type": "dimen",
+        "value": "match_parent"
+      },
+      {
+        "name": "id",
+        "type": "ref",
+        "value": "relative_left"
+      }
+    ],
+    "views": [
+      {
+        "widget": "android.widget.LinearLayout",
+        "properties": [
+          {
+            "name": "id",
+            "type": "ref",
+            "value": "linear_one"
+          },
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "match_parent"
+          },
+          {
+            "name": "layout_marginRight",
+            "type": "dimen",
+            "value": "150dp"
+          },
+          {
+            "name": "padding_bottom",
+            "type": "dimen",
+            "value": "20dp"
+          },
+          {
+            "name": "padding_top",
+            "type": "dimen",
+            "value": "20dp"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "wrap_content"
+          },
+          {
+            "name": "background",
+            "type": "color",
+            "value": "#FFC335"
+          },
+          {
+            "name": "orientation",
+            "type": "string",
+            "value": "vertical"
+          },
+          {
+            "name": "layout_centerVertical",
+            "type": "boolean",
+            "value": "true"
+          }
+        ],
+        "views": [
+          {
+            "widget": "android.widget.TextView",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "textColor",
+                "type": "color",
+                "value": "#ffffff"
+              },
+              {
+                "name": "textSize",
+                "type": "dimen",
+                "value": "50sp"
+              },
+              {
+                "name": "layout_marginLeft",
+                "type": "dimen",
+                "value": "100dp"
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "value": "ZARDOZI"
+              },
+              {
+                "name": "custom_font",
+                "type": "asset",
+                "value": "TrajanPro-Bold.ttf"
+              }
+            ]
+          },
+          {
+            "widget": "android.widget.TextView",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_marginLeft",
+                "type": "dimen",
+                "value": "100dp"
+              },
+              {
+                "name": "textColor",
+                "type": "color",
+                "value": "#ffffff"
+              },
+              {
+                "name": "textSize",
+                "type": "dimen",
+                "value": "25sp"
+              },
+              {
+                "name": "custom_font",
+                "type": "asset",
+                "value": "TrajanPro-Regular.ttf"
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "value": "EMBROIDERED PANELLED SHORT TOP"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "widget": "android.widget.LinearLayout",
+        "properties": [
+          {
+            "name": "id",
+            "type": "ref",
+            "value": "linear_two"
+          },
+          {
+            "name": "layout_below",
+            "type": "ref",
+            "value": "linear_one"
+          },
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "wrap_content"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "wrap_content"
+          },
+          {
+            "name": "layout_marginTop",
+            "type": "dimen",
+            "value": "15dp"
+          },
+          {
+            "name": "orientation",
+            "type": "string",
+            "value": "vertical"
+          }
+        ],
+        "views": [
+          {
+            "widget": "android.widget.TextView",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_marginLeft",
+                "type": "dimen",
+                "value": "100dp"
+              },
+              {
+                "name": "textColor",
+                "type": "color",
+                "value": "#000000"
+              },
+              {
+                "name": "textSize",
+                "type": "dimen",
+                "value": "25sp"
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "value": "THE OCCASION COLLECTION"
+              },
+              {
+                "name": "custom_font",
+                "type": "asset",
+                "value": "TrajanPro-Bold.ttf"
+              }
+            ]
+          },
+          {
+            "widget": "android.widget.TextView",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "textColor",
+                "type": "color",
+                "value": "#000000"
+              },
+              {
+                "name": "layout_marginLeft",
+                "type": "dimen",
+                "value": "100dp"
+              },
+              {
+                "name": "custom_font",
+                "type": "asset",
+                "value": "TrajanPro-Regular.ttf"
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "value": "THE QUIET WHISPER AT A FORMAL EVENING"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "widget": "LinearLayout",
+        "properties": [
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "wrap_content"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "wrap_content"
+          },
+          {
+            "name": "orientation",
+            "type": "string",
+            "value": "horizontal"
+          },
+          {
+            "name": "layout_alignParentBottom",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "layout_centerhorizontal",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "layout_marginBottom",
+            "type": "dimen",
+            "value": "15dp"
+          }
+        ],
+        "views": [
+          {
+            "widget": "TextView",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "value": "ZARDOZI"
+              },
+              {
+                "name": "textColor",
+                "type": "color",
+                "value": "#000000"
+              },
+              {
+                "name": "maxLines",
+                "type": "value",
+                "value": "1"
+              },
+              {
+                "name": "custom_font",
+                "type": "asset",
+                "value": "TrajanPro-Regular.ttf"
+              },
+              {
+                "name": "textSize",
+                "type": "dimen",
+                "value": "16sp"
+              }
+            ]
+          },
+          {
+            "widget": "View",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "1dp"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "match_parent"
+              },
+              {
+                "name": "layout_marginleft",
+                "type": "dimen",
+                "value": "5dp"
+              },
+              {
+                "name": "background",
+                "type": "color",
+                "value": "#000000"
+              }
+            ]
+          },
+          {
+            "widget": "TextView",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "value": "TUSSAR"
+              },
+              {
+                "name": "layout_marginleft",
+                "type": "dimen",
+                "value": "5dp"
+              },
+              {
+                "name": "textColor",
+                "type": "color",
+                "value": "#000000"
+              },
+              {
+                "name": "maxLines",
+                "type": "value",
+                "value": "1"
+              },
+              {
+                "name": "custom_font",
+                "type": "asset",
+                "value": "TrajanPro-Regular.ttf"
+              },
+              {
+                "name": "textSize",
+                "type": "dimen",
+                "value": "16sp"
+              }
+            ]
+          },
+          {
+            "widget": "View",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "1dp"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "match_parent"
+              },
+              {
+                "name": "layout_marginleft",
+                "type": "dimen",
+                "value": "5dp"
+              },
+              {
+                "name": "background",
+                "type": "color",
+                "value": "#000000"
+              }
+            ]
+          },
+          {
+            "widget": "TextView",
+            "properties": [
+              {
+                "name": "layout_width",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "layout_height",
+                "type": "dimen",
+                "value": "wrap_content"
+              },
+              {
+                "name": "text",
+                "type": "string",
+                "value": "HANDWOVEN"
+              },
+              {
+                "name": "layout_marginleft",
+                "type": "dimen",
+                "value": "5dp"
+              },
+              {
+                "name": "textColor",
+                "type": "color",
+                "value": "#000000"
+              },
+              {
+                "name": "maxLines",
+                "type": "value",
+                "value": "1"
+              },
+              {
+                "name": "custom_font",
+                "type": "asset",
+                "value": "TrajanPro-Regular.ttf"
+              },
+              {
+                "name": "textSize",
+                "type": "dimen",
+                "value": "16sp"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "widget": "android.widget.ImageView",
+        "properties": [
+          {
+            "name": "id",
+            "type": "ref",
+            "value": "img_one"
+          },
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "wrap_content"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "match_parent"
+          },
+          {
+            "name": "layout_marginTop",
+            "type": "dimen",
+            "value": "25dp"
+          },
+          {
+            "name": "layout_marginBottom",
+            "type": "dimen",
+            "value": "25dp"
+          },
+          {
+            "name": "layout_marginRight",
+            "type": "dimen",
+            "value": "30dp"
+          },
+          {
+            "name": "layout_alignParentRight",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "adjustviewbounds",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "src",
+            "type": "uri",
+            "value": "http://res.cloudinary.com/kartrocket/image/fetch/w_1044,q_auto,h_1720,c_pad,f_auto,fl_progressive/http%3A%2F%2Fkartrocket-mtp.s3.amazonaws.com%2Fall-stores%2Fimage_gauravguptaonline%2Fdata%2FJKOTF-25-A.png"
+          }
+        ]
+      },
+      {
+        "widget": "android.widget.ImageView",
+        "properties": [
+          {
+            "name": "id",
+            "type": "ref",
+            "value": "img_two"
+          },
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "50dp"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "50dp"
+          },
+          {
+            "name": "layout_alignParentRight",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "layout_alignParentTop",
+            "type": "boolean",
+            "value": "true"
+          },
+          {
+            "name": "src",
+            "type": "uri",
+            "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
+          },
+          {
+            "name": "layout_margin",
+            "type": "dimen",
+            "value": "50dp"
           }
         ]
       }
@@ -402,14 +1015,34 @@
         "name": "layout_height",
         "type": "dimen",
         "value": "match_parent"
-      },
-      {
-        "name": "background",
-        "type": "color",
-        "value": "#000000"
       }
     ],
     "views": [
+      {
+        "widget": "ImageView",
+        "properties": [
+          {
+            "name": "layout_width",
+            "type": "dimen",
+            "value": "match_parent"
+          },
+          {
+            "name": "layout_height",
+            "type": "dimen",
+            "value": "match_parent"
+          },
+          {
+            "name": "src",
+            "type": "uri",
+            "value": "https://www.colourbox.com/preview/4234014-old-paper-texture.jpg"
+          },
+          {
+            "name": "scaleType",
+            "type": "string",
+            "value": "FIT_XY"
+          }
+        ]
+      },
       {
         "widget": "ImageView",
         "properties": [
@@ -428,11 +1061,6 @@
             "type": "color",
             "value": "#ffffff",
             "radius": "5dp"
-          },
-          {
-            "name": "background",
-            "type": "uri",
-            "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn005_bg.jpg"
           },
           {
             "name": "layout_margin",
@@ -538,6 +1166,11 @@
                 "name": "textColor",
                 "type": "color",
                 "value": "#ffffff"
+              },
+              {
+                "name": "custom_font",
+                "type": "asset",
+                "value": "TrajanPro-Bold.ttf"
               }
             ]
           },
@@ -572,7 +1205,12 @@
               {
                 "name": "layout_margintop",
                 "type": "dimen",
-                "value": "15dp"
+                "value": "25dp"
+              },
+              {
+                "name": "custom_font",
+                "type": "asset",
+                "value": "TrajanPro-Bold.ttf"
               }
             ]
           }
