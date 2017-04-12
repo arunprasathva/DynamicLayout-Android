@@ -1,6 +1,5 @@
 package com.avocarrot.json2view;
 
-import com.minscapecomputing.dynamiccomponents.R;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
@@ -809,8 +808,8 @@ public class DynamicHelper {
                 case URI: {
                     Picasso.with(view.getContext())
                             .load(property.getValueString())
-                            .placeholder(R.drawable.ic_place_holder)
-                            .error(R.drawable.no_image)
+//                            .placeholder(R.drawable.ic_place_holder)
+//                            .error(R.drawable.no_image)
                             .into((ImageView) view);
                 }
                 break;
