@@ -880,7 +880,7 @@ public class DynamicHelper {
      * add string as tag
      */
     public static void applyTag(View view, DynamicProperty property) {
-        view.setTag(property.getValueString());
+        view.setTag(property);
     }
 
 

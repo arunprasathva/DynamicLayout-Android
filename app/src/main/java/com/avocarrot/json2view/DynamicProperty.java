@@ -126,13 +126,16 @@ public class DynamicProperty {
     public TYPE type;
     private Object value;
     private Object radius;
+    private Object height;
+    private Object width;
+    private Object align;
 
     /**
      * @param v value to convert as string
      * @return Value as object depends on the type
      */
     private Object convertValue(Object v) {
-        if (v==null)
+        if (v == null)
             return null;
         switch (type) {
             case INTEGER: {
@@ -142,7 +145,7 @@ public class DynamicProperty {
                 return Float.parseFloat(v.toString());
             }
             case DIMEN: {
-                return  convertDimenToPixel(v.toString());
+                return convertDimenToPixel(v.toString());
             }
             case COLOR: {
                 return convertColor(v.toString());
@@ -164,31 +167,34 @@ public class DynamicProperty {
                 try {
                     InputStream stream = new ByteArrayInputStream(Base64.decode(v.toString(), Base64.DEFAULT));
                     return BitmapFactory.decodeStream(stream);
-                }
-                catch (Exception e) {
+                } catch (Exception e) {
                     return null;
                 }
             }
             case DRAWABLE: {
-                JSONObject drawableProperties = (JSONObject)v;
+                JSONObject drawableProperties = (JSONObject) v;
 
                 GradientDrawable gd = new GradientDrawable();
 
-                if (drawableProperties!=null) {
+                if (drawableProperties != null) {
 
-                    try { gd.setColor ( convertColor( drawableProperties.getString("COLOR") ) ); } catch (JSONException e) {}
+                    try {
+                        gd.setColor(convertColor(drawableProperties.getString("COLOR")));
+                    } catch (JSONException e) {
+                    }
                     if (drawableProperties.has("CORNER")) {
                         String cornerValues = null;
                         try {
                             cornerValues = drawableProperties.getString("CORNER");
-                        } catch (JSONException e){}
+                        } catch (JSONException e) {
+                        }
                         if (!TextUtils.isEmpty(cornerValues)) {
                             if (cornerValues.contains("|")) {
                                 float[] corners = new float[8];
                                 Arrays.fill(corners, 0);
                                 String[] values = cornerValues.split("\\|");
                                 int count = Math.min(values.length, corners.length);
-                                for (int i=0 ; i<count ; i++) {
+                                for (int i = 0; i < count; i++) {
                                     try {
                                         corners[i] = convertDimenToPixel(values[i]);
                                     } catch (Exception e) {
@@ -198,7 +204,7 @@ public class DynamicProperty {
                                 gd.setCornerRadii(corners);
                             } else {
                                 try {
-                                    gd.setCornerRadius( convertDimenToPixel(cornerValues) );
+                                    gd.setCornerRadius(convertDimenToPixel(cornerValues));
                                 } catch (Exception e) {
                                     gd.setCornerRadius(0f);
                                 }
@@ -209,10 +215,16 @@ public class DynamicProperty {
                     int strokeColor = 0x00FFFFFF;
                     int strokeSize = 0;
                     if (drawableProperties.has("STROKECOLOR")) {
-                        try { strokeColor = convertColor( drawableProperties.getString("STROKECOLOR") ); } catch (JSONException e) {}
+                        try {
+                            strokeColor = convertColor(drawableProperties.getString("STROKECOLOR"));
+                        } catch (JSONException e) {
+                        }
                     }
                     if (drawableProperties.has("STROKESIZE")) {
-                        try { strokeSize = (int) convertDimenToPixel( drawableProperties.getString("STROKESIZE") ); } catch (JSONException e) {}
+                        try {
+                            strokeSize = (int) convertDimenToPixel(drawableProperties.getString("STROKESIZE"));
+                        } catch (JSONException e) {
+                        }
                     }
                     gd.setStroke(strokeSize, strokeColor);
 
@@ -226,6 +238,7 @@ public class DynamicProperty {
 
     /**
      * create property and parse json
+     *
      * @param jsonObject : json to parse
      */
     public DynamicProperty(JSONObject jsonObject) {
@@ -242,13 +255,29 @@ public class DynamicProperty {
         }
         try {
             value = convertValue(jsonObject.get("value"));
-        } catch (Exception e) {}try {
+        } catch (Exception e) {
+        }
+
+        try {
             radius = convertValue(jsonObject.optString("radius"));
-        } catch (Exception e) {}
+        } catch (Exception e) {
+        }
+        try {
+            height = convertValue(jsonObject.optString("height"));
+        } catch (Exception e) {
+        }
+        try {
+            width = convertValue(jsonObject.optString("width"));
+        } catch (Exception e) {
+        }
+        try {
+            align = convertValue(jsonObject.optString("align"));
+        } catch (Exception e) {
+        }
     }
 
     public boolean isValid() {
-        return value!=null;
+        return value != null;
     }
 
     /**
@@ -262,7 +291,7 @@ public class DynamicProperty {
 
         try {
             fieldRequested = clazz.getField(varName);
-            if (fieldRequested!=null) {
+            if (fieldRequested != null) {
                 return fieldRequested.get(clazz);
             }
         } catch (SecurityException e) {
@@ -278,7 +307,9 @@ public class DynamicProperty {
     }
 
 
-    /** next function just cast value and return the object **/
+    /**
+     * next function just cast value and return the object
+     **/
 
     public int getValueColor() {
         if (type == TYPE.COLOR) return Integer.class.cast(value);
@@ -290,13 +321,40 @@ public class DynamicProperty {
         return -1;
     }
 
+    public int getVideoHeight() {
+
+        if (height instanceof Integer)
+            return Integer.class.cast(height);
+        else if (height instanceof String) {
+            if (TextUtils.isEmpty(String.class.cast(height))) return 0;
+            return Integer.parseInt(String.class.cast(height));
+        }else
+            return (int) height;
+    }
+
+    public int getVideoWidth() {
+        if (width instanceof Integer)
+            return Integer.class.cast(width);
+        else if (width instanceof String) {
+            if (TextUtils.isEmpty(String.class.cast(width))) return 0;
+            return Integer.parseInt(String.class.cast(width));
+        } else
+            return (int) width;
+    }
+
+    public String getVideoAlign() {
+        return (String) align;
+    }
+
     public String getValueFont() {
         if (name == NAME.CUSTOM_FONT) return (String) value;
         return "";
     }
+
     public String getValueString() {
         return String.class.cast(value);
     }
+
     public int getValueInt() {
         if (value instanceof Integer)
             return Integer.class.cast(value);
@@ -307,21 +365,27 @@ public class DynamicProperty {
         else
             return (int) value;
     }
+
     public float getValueFloat() {
         return Float.class.cast(value);
     }
+
     public Boolean getValueBoolean() {
         return Boolean.class.cast(value);
     }
+
     public Bitmap getValueBitmap() {
-        return (Bitmap)value;
+        return (Bitmap) value;
     }
+
     public Drawable getValueBitmapDrawable() {
         return new BitmapDrawable(Resources.getSystem(), getValueBitmap());
     }
+
     public Drawable getValueGradientDrawable() {
-        return (Drawable)value;
+        return (Drawable) value;
     }
+
     public JSONObject getValueJSON() {
         return JSONObject.class.cast(value);
     }
@@ -342,7 +406,7 @@ public class DynamicProperty {
         else if (dimen.endsWith("px"))
             return Integer.parseInt(dimen.substring(0, dimen.length() - 2));
         else if (dimen.endsWith("%"))
-            return (int)(Float.parseFloat(dimen.substring(0, dimen.length() - 1))/100f * DynamicHelper.deviceWidth());
+            return (int) (Float.parseFloat(dimen.substring(0, dimen.length() - 1)) / 100f * DynamicHelper.deviceWidth());
         else if (dimen.equalsIgnoreCase("match_parent"))
             return ViewGroup.LayoutParams.MATCH_PARENT;
         else if (dimen.equalsIgnoreCase("wrap_content"))

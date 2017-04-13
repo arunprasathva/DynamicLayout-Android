@@ -16,7 +16,7 @@
     <FrameLayout
         android:id="@+id/videoSurfaceContainer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@+id/filler"
         android:layout_centerInParent="true"
         android:background="@android:color/black">
@@ -24,7 +24,7 @@
         <com.minscapecomputing.dynamiccomponents.FullscreenVideoLayout
             android:id="@+id/videoSurface"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:background="@android:color/black"/>
 

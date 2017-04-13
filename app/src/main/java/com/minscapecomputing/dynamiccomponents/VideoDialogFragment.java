@@ -1,5 +1,7 @@
 package com.minscapecomputing.dynamiccomponents;
 
+import org.json.JSONException;
+
 import java.io.IOException;
 
 import android.app.Activity;
@@ -9,6 +11,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
+import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,9 +45,9 @@ public class VideoDialogFragment extends android.support.v4.app.DialogFragment {
     private View filler;
     private RelativeLayout video_frame;
     private String url;
+    private String imageAlign;
 
-    public VideoDialogFragment() {
-    }
+    public VideoDialogFragment() { }
 
     public static VideoDialogFragment newInstance(Bundle args) {
         VideoDialogFragment fragment = new VideoDialogFragment();
@@ -66,7 +69,11 @@ public class VideoDialogFragment extends android.support.v4.app.DialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.video_dialog_layout, container, false);
 
-        init(rootView);
+        try {
+            init(rootView);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         setListener();
         if (bundle != null) {
             startPlaying();
@@ -151,7 +158,7 @@ public class VideoDialogFragment extends android.support.v4.app.DialogFragment {
         });
     }
 
-    private void init(View rootView) {
+    private void init(View rootView) throws JSONException {
 
         close = (ImageView) rootView.findViewById(R.id.close);
         filler = rootView.findViewById(R.id.filler);
@@ -162,21 +169,26 @@ public class VideoDialogFragment extends android.support.v4.app.DialogFragment {
 
         imgfullscreen = (ImageButton) rootView.findViewById(R.id.vcv_img_fullscreen);
 
-        if (bundle.containsKey("VideoUrl")) {
-            url = bundle.getString("VideoUrl");
-            uri = Uri.parse(url);
-        }
+        if (bundle != null) {
+            if (bundle.containsKey("VideoUrl")) {
+                uri = Uri.parse(bundle.getString("VideoUrl"));
+            }
 
-        if (bundle.containsKey("page")) {
-            page = bundle.getString("page");
-        }
+            if (bundle.containsKey("page")) {
+                page = bundle.getString("page");
+            }
 
-        if (bundle.containsKey("height")) {
-            imageHeight = bundle.getInt("height");
-        }
+            if (bundle.containsKey("height")) {
+                imageHeight = bundle.getInt("height");
+            }
 
-        if (bundle.containsKey("width")) {
-            imageWidth = bundle.getInt("width");
+            if (bundle.containsKey("width")) {
+                imageWidth = bundle.getInt("width");
+            }
+
+            if (bundle.containsKey("align")) {
+                imageAlign = bundle.getString("align");
+            }
         }
     }
 
@@ -194,13 +206,18 @@ public class VideoDialogFragment extends android.support.v4.app.DialogFragment {
             } else if (page.equalsIgnoreCase("detail")) {
                 window.setLayout(imageWidth, imageHeight);
                 window.setGravity(Gravity.TOP | Gravity.LEFT);
+            } else if (page.equalsIgnoreCase("custom") && imageWidth > 0) {
+                window.setLayout(imageWidth, imageHeight);
+                setCustomAlignment(window);
+            } else {
+                window.setLayout(dialogWidth, dialogHeight);
+                window.setGravity(Gravity.CENTER);
             }
 
             isFullScreen = false;
             filler.setVisibility(View.VISIBLE);
         }
     }
-
 
     @Override
     public void onStart() {
@@ -210,6 +227,10 @@ public class VideoDialogFragment extends android.support.v4.app.DialogFragment {
             setLayoutHomePage();
         } else if (page.equalsIgnoreCase("detail")) {
             setLayoutDetailPage();
+        } else if (page.equalsIgnoreCase("custom") && imageWidth > 0) {
+            setLayoutCustomPage();
+        } else {
+            setLayoutHomePage();
         }
     }
 
@@ -270,6 +291,58 @@ public class VideoDialogFragment extends android.support.v4.app.DialogFragment {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private void setLayoutCustomPage() {
+
+        // safety check
+        if (getDialog().getWindow() == null)
+            return;
+
+        try {
+            Window window = getDialog().getWindow();
+            window.setLayout(imageWidth, imageHeight);
+
+            setCustomAlignment(window);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void setCustomAlignment(Window window) {
+
+        if (getAlignment() != null) {
+            int[] gravities = getAlignment();
+            if (gravities.length == 1) {
+                window.setGravity(gravities[0]);
+            } else if (gravities.length == 2) {
+                window.setGravity(gravities[0] | gravities[1]);
+            } else {
+                window.setGravity(Gravity.CENTER);
+            }
+        } else {
+            window.setGravity(Gravity.CENTER);
+        }
+    }
+
+    private int[] getAlignment() {
+
+        if (TextUtils.isEmpty(imageAlign)) return new int[]{Gravity.CENTER};
+        if (imageAlign != null) {
+            if (imageAlign.contains("|")) {
+                String[] split = imageAlign.split("\\|");
+                if (split.length > 0) {
+                    int[] alignmentValue = new int[split.length];
+                    for (int i = 0; i < split.length; i++) {
+                        alignmentValue[i] = Integer.parseInt(split[i]);
+                    }
+                    return alignmentValue;
+                }
+            } else {
+                return new int[]{Integer.parseInt(imageAlign)};
+            }
+        }
+        return null;
     }
 
     private void showFailureAlert(String message) {

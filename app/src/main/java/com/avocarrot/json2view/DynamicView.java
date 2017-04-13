@@ -200,6 +200,9 @@ public class DynamicView {
                 case "View":
                     actualWidgetName = "android.view." + widgetName;
                     break;
+                case "VideoLayout":
+                    actualWidgetName = "com.minscapecomputing.dynamiccomponents.FullscreenVideoLayout";
+                    break;
                 default:
                     actualWidgetName = "android.widget." + widgetName;
                     break;

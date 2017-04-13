@@ -24,6 +24,8 @@ import android.os.PowerManager;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import okhttp3.Request;
@@ -45,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         /*try {
 
-            JSONArray jsonArray = new JSONArray(readFile("sample.json", this));
+            JSONArray jsonArray = new JSONArray(readFile("sample_new.json", this));
             setPagerAdapter(jsonArray);
         } catch (JSONException je) {
             je.printStackTrace();
@@ -307,5 +309,22 @@ public class MainActivity extends AppCompatActivity {
             super.onProgressUpdate(values);
             mProgressDialog.setProgress(values[0]);
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.switchLayout: {
+                getJSON("https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/assets/sample_new.json");
+                break;
+            }
+        }
+        return false;
     }
 }
