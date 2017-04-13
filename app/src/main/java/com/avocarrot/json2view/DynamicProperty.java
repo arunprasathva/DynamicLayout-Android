@@ -57,6 +57,7 @@ public class DynamicProperty {
         PADDING_TOP,
         PADDING_BOTTOM,
         PADDING,
+        INCLUDE_FONT_PADDING,
         LAYOUT_MARGINLEFT,
         LAYOUT_MARGINRIGHT,
         LAYOUT_MARGINTOP,

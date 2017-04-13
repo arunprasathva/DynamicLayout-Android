@@ -19,6 +19,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -44,6 +45,7 @@ public class DynamicHelper {
     public static String applyStyleProperties(View view, List<DynamicProperty> properties) {
         String id = "";
         for (DynamicProperty dynProp : properties) {
+            Log.e("TAG", "property name = " + dynProp.name);
             switch (dynProp.name) {
                 case ID: {
                     id = dynProp.getValueString();
@@ -71,6 +73,10 @@ public class DynamicHelper {
                 break;
                 case PADDING: {
                     applyPadding(view, dynProp);
+                }
+                break;
+                case INCLUDE_FONT_PADDING: {
+                    applyFontPadding(view, dynProp);
                 }
                 break;
                 case PADDING_LEFT: {
@@ -399,7 +405,7 @@ public class DynamicHelper {
                         if (dynProp.type == DynamicProperty.TYPE.FILE) {
                             typeFace = Typeface.createFromFile(fontPath);
                         } else if (dynProp.type == DynamicProperty.TYPE.ASSET) {
-                            typeFace = Typeface.createFromAsset(view.getContext().getAssets(),fontPath);
+                            typeFace = Typeface.createFromAsset(view.getContext().getAssets(), fontPath);
                         }
 
                         if (typeFace != null) {
@@ -488,6 +494,21 @@ public class DynamicHelper {
                 case DIMEN: {
                     int padding = property.getValueInt();
                     view.setPadding(padding, padding, padding, padding);
+                }
+                break;
+            }
+        }
+    }
+
+    /**
+     * apply font padding in view
+     */
+    public static void applyFontPadding(View view, DynamicProperty property) {
+        if (view != null) {
+            switch (property.type) {
+                case BOOLEAN: {
+                    if (view instanceof TextView)
+                        ((TextView) view).setIncludeFontPadding(property.getValueBoolean());
                 }
                 break;
             }

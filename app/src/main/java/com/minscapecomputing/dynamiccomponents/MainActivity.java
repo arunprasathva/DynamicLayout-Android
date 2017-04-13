@@ -4,6 +4,7 @@ import com.viewpagerindicator.LinePageIndicator;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.FileOutputStream;
@@ -35,8 +36,13 @@ public class MainActivity extends AppCompatActivity {
     private ProgressDialog mProgressDialog;
 
     private ViewPager viewPager;
+    private ViewPager verticalPager;
     private ImageView imgRight;
     private ImageView imgLeft;
+    private ImageView imgTopArrow;
+    private ImageView imgBottomArrow;
+
+    private boolean isHorizontal = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,15 +51,26 @@ public class MainActivity extends AppCompatActivity {
 
         init();
 
-        /*try {
-
-            JSONArray jsonArray = new JSONArray(readFile("sample_new.json", this));
-            setPagerAdapter(jsonArray);
+        try {
+            JSONObject jsonObject = new JSONObject(readFile("sample.json", this));
+            JSONArray jsonArray = jsonObject.optJSONArray("children");
+            if (jsonArray != null) {
+                isHorizontal = !jsonObject.optString("pager_orientation").equalsIgnoreCase("vertical");
+                if (isHorizontal) {
+                    verticalPager.setVisibility(View.GONE);
+                    viewPager.setVisibility(View.VISIBLE);
+                    setPagerAdapter(jsonArray, viewPager);
+                } else {
+                    verticalPager.setVisibility(View.VISIBLE);
+                    viewPager.setVisibility(View.GONE);
+                    setPagerAdapter(jsonArray, verticalPager);
+                }
+            }
         } catch (JSONException je) {
             je.printStackTrace();
-        }*/
+        }
 
-        getJSON("https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/assets/sample.json");
+//        getJSON("https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/assets/sample.json");
     }
 
     private void getJSON(String URL) {
@@ -63,25 +80,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(String result) {
                 try {
-                    JSONArray jsonArray = new JSONArray(result);
-
+                    JSONObject jsonObject = new JSONObject(result);
+                    JSONArray jsonArray = jsonObject.optJSONArray("children");
                     if (jsonArray != null) {
-
-                        setPagerAdapter(jsonArray);
-                        /*final DownloadTask downloadTask = new DownloadTask(MainActivity.this, jsonArray);
-                        downloadTask.execute();
-
-                        mProgressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
-                            @Override
-                            public void onCancel(DialogInterface dialog) {
-                                downloadTask.cancel(true);
-                            }
-                        });*/
-                    } else {
-                        Log.e("Json2View", "Could not load valid json file");
+                        isHorizontal = !jsonObject.optString("pager_orientation").equalsIgnoreCase("vertical");
+                        if (isHorizontal) {
+                            verticalPager.setVisibility(View.GONE);
+                            viewPager.setVisibility(View.VISIBLE);
+                            setPagerAdapter(jsonArray, viewPager);
+                        } else {
+                            verticalPager.setVisibility(View.VISIBLE);
+                            viewPager.setVisibility(View.GONE);
+                            setPagerAdapter(jsonArray, verticalPager);
+                        }
                     }
-                } catch (JSONException je) {
-                    je.printStackTrace();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -102,8 +114,11 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
 
         viewPager = (ViewPager) findViewById(R.id.pager);
+        verticalPager = (ViewPager) findViewById(R.id.verticalPager);
         imgLeft = (ImageView) findViewById(R.id.imgLeftArrow);
         imgRight = (ImageView) findViewById(R.id.imgRightArrow);
+        imgTopArrow = (ImageView) findViewById(R.id.imgTopArrow);
+        imgBottomArrow = (ImageView) findViewById(R.id.imgBottomArrow);
 
         mProgressDialog = new ProgressDialog(MainActivity.this);
         mProgressDialog.setMessage("Downloading File");
@@ -111,16 +126,18 @@ public class MainActivity extends AppCompatActivity {
         mProgressDialog.setCancelable(false);
     }
 
-    private void setPagerAdapter(final JSONArray jsonArray) {
+    private void setPagerAdapter(final JSONArray jsonArray, final ViewPager pager) {
 
         WelcomeSlidePagerAdapter adapter = new WelcomeSlidePagerAdapter(getSupportFragmentManager(), jsonArray);
-        viewPager.setAdapter(adapter);
+        pager.setAdapter(adapter);
 
-        if (jsonArray.length() > 1)
-            imgRight.setVisibility(View.VISIBLE);
+        (isHorizontal ? imgBottomArrow : imgRight).setVisibility(View.GONE);
+        if (jsonArray.length() > 1) {
+            (isHorizontal ? imgRight : imgBottomArrow).setVisibility(View.VISIBLE);
+        }
 
         LinePageIndicator indicator = (LinePageIndicator) findViewById(R.id.indicator);
-        indicator.setViewPager(viewPager);
+        indicator.setViewPager(pager);
         final float density = getResources().getDisplayMetrics().density;
         indicator.setSelectedColor(Color.BLACK);
         indicator.setUnselectedColor(Color.GRAY);
@@ -132,30 +149,44 @@ public class MainActivity extends AppCompatActivity {
         imgRight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
+                pager.setCurrentItem(pager.getCurrentItem() + 1);
+            }
+        });
+
+        imgBottomArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pager.setCurrentItem(pager.getCurrentItem() + 1);
             }
         });
 
         imgLeft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
+                pager.setCurrentItem(pager.getCurrentItem() - 1);
             }
         });
 
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        imgTopArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pager.setCurrentItem(pager.getCurrentItem() - 1);
+            }
+        });
+
+        pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
             }
 
             @Override
             public void onPageSelected(int position) {
-                imgLeft.setVisibility(View.VISIBLE);
-                imgRight.setVisibility(View.VISIBLE);
+                (isHorizontal ? imgLeft : imgTopArrow).setVisibility(View.VISIBLE);
+                (isHorizontal ? imgRight : imgBottomArrow).setVisibility(View.VISIBLE);
                 if (position == 0) {
-                    imgLeft.setVisibility(View.GONE);
+                    (isHorizontal ? imgLeft : imgTopArrow).setVisibility(View.GONE);
                 } else if (position == jsonArray.length() - 1) {
-                    imgRight.setVisibility(View.GONE);
+                    (isHorizontal ? imgRight : imgBottomArrow).setVisibility(View.GONE);
                 }
                 Log.e("TAG", "position-" + position + "/" + (jsonArray.length() - 1));
             }
@@ -223,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             if (mProgressDialog != null && mProgressDialog.isShowing()) mProgressDialog.dismiss();
-            setPagerAdapter(jsonArray);
+            setPagerAdapter(jsonArray, viewPager);
         }
 
         @Override

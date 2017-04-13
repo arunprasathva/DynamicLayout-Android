@@ -11,6 +11,7 @@ import java.util.List;
 
 import android.content.Context;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -138,6 +139,9 @@ public class DynamicView {
             if (jArray != null) {
                 for (int i = 0; i < jArray.length(); i++) {
                     DynamicProperty p = new DynamicProperty(jArray.getJSONObject(i));
+                    if (jArray.optJSONObject(i).getString("name").equalsIgnoreCase("INCLUDE_FONT_PADDING")) {
+                        Log.e("TAG", "property name = ");
+                    }
                     if (p.isValid())
                         properties.add(p);
                 }

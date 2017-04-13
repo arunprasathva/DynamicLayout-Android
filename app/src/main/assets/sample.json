@@ -1,2397 +1,2430 @@
-[
-  {
-    "widget": "RelativeLayout",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      }
-    ],
-    "views": [
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn001_bg.jpg"
-          },
-          {
-            "name": "scaleType",
-            "type": "string",
-            "value": "FIT_XY"
-          }
-        ]
-      },
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
-          },
-          {
-            "name": "layout_alignparentright",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_alignparenttop",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_margin",
-            "type": "dimen",
-            "value": "50dp"
-          }
-        ]
-      },
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "vertical"
-          },
-          {
-            "name": "layout_alignparentright",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_alignparentbottom",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_margin",
-            "type": "dimen",
-            "value": "50dp"
-          }
-        ],
-        "views": [
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "THE OCCASION COLLECTION"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "35sp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#EDE8BB"
-              },
-              {
-                "name": "maxLines",
-                "type": "value",
-                "value": "1"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Bold.ttf"
-              }
-            ]
-          },
-          {
-            "widget": "View",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "1dp"
-              },
-              {
-                "name": "layout_margintop",
-                "type": "dimen",
-                "value": "2dp"
-              },
-              {
-                "name": "background",
-                "type": "color",
-                "value": "#EDE8BB"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "THE QUIET WHISPER AT A FORMAL EVENING"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "22sp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#EDE8BB"
-              },
-              {
-                "name": "maxLines",
-                "type": "value",
-                "value": "1"
-              },
-              {
-                "name": "layout_margintop",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              }
-            ]
-          },
-          {
-            "widget": "LinearLayout",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "orientation",
-                "type": "string",
-                "value": "horizontal"
-              },
-              {
-                "name": "layout_marginTop",
-                "type": "dimen",
-                "value": "10dp"
-              }
-            ],
-            "views": [
-              {
-                "widget": "TextView",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "text",
-                    "type": "string",
-                    "value": "ZARDOZI"
-                  },
-                  {
-                    "name": "textColor",
-                    "type": "color",
-                    "value": "#EDE8BB"
-                  },
-                  {
-                    "name": "maxLines",
-                    "type": "value",
-                    "value": "1"
-                  },
-                  {
-                    "name": "custom_font",
-                    "type": "asset",
-                    "value": "TrajanPro-Regular.ttf"
-                  },
-                  {
-                    "name": "textSize",
-                    "type": "dimen",
-                    "value": "13sp"
-                  }
-                ]
-              },
-              {
-                "widget": "View",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "1dp"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "match_parent"
-                  },
-                  {
-                    "name": "layout_marginleft",
-                    "type": "dimen",
-                    "value": "5dp"
-                  },
-                  {
-                    "name": "background",
-                    "type": "color",
-                    "value": "#EDE8BB"
-                  }
-                ]
-              },
-              {
-                "widget": "TextView",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "text",
-                    "type": "string",
-                    "value": "TUSSAR"
-                  },
-                  {
-                    "name": "layout_marginleft",
-                    "type": "dimen",
-                    "value": "5dp"
-                  },
-                  {
-                    "name": "textColor",
-                    "type": "color",
-                    "value": "#EDE8BB"
-                  },
-                  {
-                    "name": "maxLines",
-                    "type": "value",
-                    "value": "1"
-                  },
-                  {
-                    "name": "custom_font",
-                    "type": "asset",
-                    "value": "TrajanPro-Regular.ttf"
-                  },
-                  {
-                    "name": "textSize",
-                    "type": "dimen",
-                    "value": "13sp"
-                  }
-                ]
-              },
-              {
-                "widget": "View",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "1dp"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "match_parent"
-                  },
-                  {
-                    "name": "layout_marginleft",
-                    "type": "dimen",
-                    "value": "5dp"
-                  },
-                  {
-                    "name": "background",
-                    "type": "color",
-                    "value": "#EDE8BB"
-                  }
-                ]
-              },
-              {
-                "widget": "TextView",
-                "properties": [
-                  {
-                    "name": "layout_width",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "layout_height",
-                    "type": "dimen",
-                    "value": "wrap_content"
-                  },
-                  {
-                    "name": "text",
-                    "type": "string",
-                    "value": "HANDWOVEN"
-                  },
-                  {
-                    "name": "layout_marginleft",
-                    "type": "dimen",
-                    "value": "5dp"
-                  },
-                  {
-                    "name": "textColor",
-                    "type": "color",
-                    "value": "#EDE8BB"
-                  },
-                  {
-                    "name": "maxLines",
-                    "type": "value",
-                    "value": "1"
-                  },
-                  {
-                    "name": "custom_font",
-                    "type": "asset",
-                    "value": "TrajanPro-Regular.ttf"
-                  },
-                  {
-                    "name": "textSize",
-                    "type": "dimen",
-                    "value": "13sp"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "widget": "RelativeLayout",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "id",
-        "type": "ref",
-        "value": "relative_left"
-      },
-      {
-        "name": "background",
-        "type": "color",
-        "value": "#ffffff"
-      }
-    ],
-    "views": [
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "linear_one"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "padding_bottom",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "padding_top",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "background",
-            "type": "color",
-            "value": "#FFC335"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "vertical"
-          },
-          {
-            "name": "layout_centerVertical",
-            "type": "boolean",
-            "value": "true"
-          }
-        ],
-        "views": [
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#ffffff"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "100sp"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "ZARDOZI"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Bold.ttf"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#ffffff"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "20sp"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "EMBROIDERED PANELLED SHORT TOP"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "linear_two"
-          },
-          {
-            "name": "layout_below",
-            "type": "ref",
-            "value": "linear_one"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_marginTop",
-            "type": "dimen",
-            "value": "15dp"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "vertical"
-          }
-        ],
-        "views": [
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "20sp"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "THE OCCASION COLLECTION"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "THE QUIET WHISPER AT A FORMAL EVENING"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "20sp"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "horizontal"
-          },
-          {
-            "name": "layout_alignParentBottom",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_centerhorizontal",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_marginBottom",
-            "type": "dimen",
-            "value": "15dp"
-          }
-        ],
-        "views": [
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "ZARDOZI"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "maxLines",
-                "type": "value",
-                "value": "1"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "13sp"
-              }
-            ]
-          },
-          {
-            "widget": "View",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "1dp"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "background",
-                "type": "color",
-                "value": "#000000"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "TUSSAR"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "maxLines",
-                "type": "value",
-                "value": "1"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "13sp"
-              }
-            ]
-          },
-          {
-            "widget": "View",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "1dp"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "background",
-                "type": "color",
-                "value": "#000000"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "HANDWOVEN"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "maxLines",
-                "type": "value",
-                "value": "1"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "13sp"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "img_one"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_marginTop",
-            "type": "dimen",
-            "value": "25dp"
-          },
-          {
-            "name": "layout_marginBottom",
-            "type": "dimen",
-            "value": "25dp"
-          },
-          {
-            "name": "padding_right",
-            "type": "dimen",
-            "value": "30dp"
-          },
-          {
-            "name": "gravity",
-            "type": "dimen",
-            "value": "left"
-          },
-          {
-            "name": "layout_alignParentRight",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "adjustviewbounds",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "http://res.cloudinary.com/kartrocket/image/fetch/w_1044,q_auto,h_1720,c_pad,f_auto,fl_progressive/http%3A%2F%2Fkartrocket-mtp.s3.amazonaws.com%2Fall-stores%2Fimage_gauravguptaonline%2Fdata%2FJKOTF-25-A.png"
-          }
-        ]
-      },
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "img_two"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "layout_alignParentRight",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_alignParentTop",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
-          },
-          {
-            "name": "layout_margin",
-            "type": "dimen",
-            "value": "50dp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "widget": "RelativeLayout",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "id",
-        "type": "ref",
-        "value": "relative_left"
-      },
-      {
-        "name": "background",
-        "type": "color",
-        "value": "#ffffff"
-      }
-    ],
-    "views": [
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "linear_one"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "padding_bottom",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "padding_top",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "background",
-            "type": "color",
-            "value": "#FFC335"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "vertical"
-          },
-          {
-            "name": "layout_centerVertical",
-            "type": "boolean",
-            "value": "true"
-          }
-        ],
-        "views": [
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#ffffff"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "100sp"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "ZARDOZI"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Bold.ttf"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#ffffff"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "20sp"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "EMBROIDERED LONG FLARED KURTA"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "linear_two"
-          },
-          {
-            "name": "layout_below",
-            "type": "ref",
-            "value": "linear_one"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_marginTop",
-            "type": "dimen",
-            "value": "15dp"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "vertical"
-          }
-        ],
-        "views": [
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "20sp"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "THE OCCASION COLLECTION"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "THE QUIET WHISPER AT A FORMAL EVENING"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "20sp"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "horizontal"
-          },
-          {
-            "name": "layout_alignParentBottom",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_centerhorizontal",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_marginBottom",
-            "type": "dimen",
-            "value": "15dp"
-          }
-        ],
-        "views": [
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "ZARDOZI"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "maxLines",
-                "type": "value",
-                "value": "1"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "13sp"
-              }
-            ]
-          },
-          {
-            "widget": "View",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "1dp"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "background",
-                "type": "color",
-                "value": "#000000"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "TUSSAR"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "maxLines",
-                "type": "value",
-                "value": "1"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "13sp"
-              }
-            ]
-          },
-          {
-            "widget": "View",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "1dp"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "background",
-                "type": "color",
-                "value": "#000000"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "HANDWOVEN"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "maxLines",
-                "type": "value",
-                "value": "1"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "13sp"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "img_one"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_marginTop",
-            "type": "dimen",
-            "value": "25dp"
-          },
-          {
-            "name": "layout_marginBottom",
-            "type": "dimen",
-            "value": "25dp"
-          },
-          {
-            "name": "padding_right",
-            "type": "dimen",
-            "value": "30dp"
-          },
-          {
-            "name": "gravity",
-            "type": "dimen",
-            "value": "left"
-          },
-          {
-            "name": "layout_alignParentRight",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "adjustviewbounds",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "http://cdn.careers.page.com/sites/default/files/09_woman_me_0.png"
-          }
-        ]
-      },
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "img_two"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "layout_alignParentRight",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_alignParentTop",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
-          },
-          {
-            "name": "layout_margin",
-            "type": "dimen",
-            "value": "50dp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "widget": "RelativeLayout",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "id",
-        "type": "ref",
-        "value": "relative_left"
-      },
-      {
-        "name": "background",
-        "type": "color",
-        "value": "#ffffff"
-      }
-    ],
-    "views": [
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "linear_one"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "padding_bottom",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "padding_top",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "background",
-            "type": "color",
-            "value": "#FFC335"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "vertical"
-          },
-          {
-            "name": "layout_centerVertical",
-            "type": "boolean",
-            "value": "true"
-          }
-        ],
-        "views": [
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#ffffff"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "100sp"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "ZARDOZI"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Bold.ttf"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#ffffff"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "20sp"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "EMBROIDERED CHANDERI SLEEVE TUNIC"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "linear_two"
-          },
-          {
-            "name": "layout_below",
-            "type": "ref",
-            "value": "linear_one"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_marginTop",
-            "type": "dimen",
-            "value": "15dp"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "vertical"
-          }
-        ],
-        "views": [
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "20sp"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "THE OCCASION COLLECTION"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "layout_marginLeft",
-                "type": "dimen",
-                "value": "105dp"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "THE QUIET WHISPER AT A FORMAL EVENING"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "20sp"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "horizontal"
-          },
-          {
-            "name": "layout_alignParentBottom",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_centerhorizontal",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_marginBottom",
-            "type": "dimen",
-            "value": "15dp"
-          }
-        ],
-        "views": [
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "ZARDOZI"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "maxLines",
-                "type": "value",
-                "value": "1"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "13sp"
-              }
-            ]
-          },
-          {
-            "widget": "View",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "1dp"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "background",
-                "type": "color",
-                "value": "#000000"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "TUSSAR"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "maxLines",
-                "type": "value",
-                "value": "1"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "13sp"
-              }
-            ]
-          },
-          {
-            "widget": "View",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "1dp"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "match_parent"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "background",
-                "type": "color",
-                "value": "#000000"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "HANDWOVEN"
-              },
-              {
-                "name": "layout_marginleft",
-                "type": "dimen",
-                "value": "5dp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#000000"
-              },
-              {
-                "name": "maxLines",
-                "type": "value",
-                "value": "1"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Regular.ttf"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "13sp"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "img_one"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_marginTop",
-            "type": "dimen",
-            "value": "25dp"
-          },
-          {
-            "name": "layout_marginBottom",
-            "type": "dimen",
-            "value": "25dp"
-          },
-          {
-            "name": "padding_right",
-            "type": "dimen",
-            "value": "30dp"
-          },
-          {
-            "name": "gravity",
-            "type": "dimen",
-            "value": "left"
-          },
-          {
-            "name": "layout_alignParentRight",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "adjustviewbounds",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "http://cdn.careers.page.com/sites/default/files/04_woman_na%281%29_0.png"
-          }
-        ]
-      },
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "id",
-            "type": "ref",
-            "value": "img_two"
-          },
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "layout_alignParentRight",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_alignParentTop",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
-          },
-          {
-            "name": "layout_margin",
-            "type": "dimen",
-            "value": "50dp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "widget": "RelativeLayout",
-    "properties": [
-      {
-        "name": "layout_width",
-        "type": "dimen",
-        "value": "match_parent"
-      },
-      {
-        "name": "layout_height",
-        "type": "dimen",
-        "value": "match_parent"
-      }
-    ],
-    "views": [
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "https://www.colourbox.com/preview/4234014-old-paper-texture.jpg"
-          },
-          {
-            "name": "scaleType",
-            "type": "string",
-            "value": "FIT_XY"
-          }
-        ]
-      },
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "match_parent"
-          },
-          {
-            "name": "border",
-            "type": "color",
-            "value": "#ffffff",
-            "radius": "5dp"
-          },
-          {
-            "name": "layout_margin",
-            "type": "dimen",
-            "value": "100dp"
-          }
-        ]
-      },
-      {
-        "widget": "ImageView",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "50dp"
-          },
-          {
-            "name": "src",
-            "type": "uri",
-            "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
-          },
-          {
-            "name": "layout_alignparentright",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_alignparenttop",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_margin",
-            "type": "dimen",
-            "value": "150dp"
-          }
-        ]
-      },
-      {
-        "widget": "LinearLayout",
-        "properties": [
-          {
-            "name": "layout_width",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "layout_height",
-            "type": "dimen",
-            "value": "wrap_content"
-          },
-          {
-            "name": "orientation",
-            "type": "string",
-            "value": "vertical"
-          },
-          {
-            "name": "layout_alignparentleft",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_centervertical",
-            "type": "boolean",
-            "value": "true"
-          },
-          {
-            "name": "layout_margin",
-            "type": "dimen",
-            "value": "150dp"
-          }
-        ],
-        "views": [
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "DID YOU \nKNOW?"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "35sp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#ffffff"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Bold.ttf"
-              }
-            ]
-          },
-          {
-            "widget": "TextView",
-            "properties": [
-              {
-                "name": "layout_width",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "layout_height",
-                "type": "dimen",
-                "value": "wrap_content"
-              },
-              {
-                "name": "text",
-                "type": "string",
-                "value": "LADY CURZON, VICERINE OF INDIA, WAS INSTRUMENTAL IN \nPROMOTING THE USE OF INDIAN EMBROIDERY IN \nWESTERN FASHION. \nHER PEACOCK GOWN, STITCHED OF GOLD CLOTH AND\nEMBROIDERED IN ZARDOZI WAS TREMENDOUS\nSENSATION AT HER CORONATION CEREMONY!"
-              },
-              {
-                "name": "textSize",
-                "type": "dimen",
-                "value": "15sp"
-              },
-              {
-                "name": "textColor",
-                "type": "color",
-                "value": "#ffffff"
-              },
-              {
-                "name": "layout_margintop",
-                "type": "dimen",
-                "value": "25dp"
-              },
-              {
-                "name": "custom_font",
-                "type": "asset",
-                "value": "TrajanPro-Bold.ttf"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-]
+{
+  "pager_orientation": "vertical",
+  "children": [
+    {
+      "widget": "RelativeLayout",
+      "properties": [
+        {
+          "name": "layout_width",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "layout_height",
+          "type": "dimen",
+          "value": "match_parent"
+        }
+      ],
+      "views": [
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/crvn001_bg.jpg"
+            },
+            {
+              "name": "scaleType",
+              "type": "string",
+              "value": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
+            },
+            {
+              "name": "layout_alignparentright",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_alignparenttop",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_margin",
+              "type": "dimen",
+              "value": "50dp"
+            }
+          ]
+        },
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "vertical"
+            },
+            {
+              "name": "layout_alignparentright",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_alignparentbottom",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_margin",
+              "type": "dimen",
+              "value": "50dp"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "THE OCCASION COLLECTION"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "35sp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#EDE8BB"
+                },
+                {
+                  "name": "maxLines",
+                  "type": "value",
+                  "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Bold.ttf"
+                }
+              ]
+            },
+            {
+              "widget": "View",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "match_parent"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "1dp"
+                },
+                {
+                  "name": "layout_margintop",
+                  "type": "dimen",
+                  "value": "2dp"
+                },
+                {
+                  "name": "background",
+                  "type": "color",
+                  "value": "#EDE8BB"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "THE QUIET WHISPER AT A FORMAL EVENING"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "22sp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#EDE8BB"
+                },
+                {
+                  "name": "maxLines",
+                  "type": "value",
+                  "value": "1"
+                },
+                {
+                  "name": "layout_margintop",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                }
+              ]
+            },
+            {
+              "widget": "LinearLayout",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "orientation",
+                  "type": "string",
+                  "value": "horizontal"
+                },
+                {
+                  "name": "layout_marginTop",
+                  "type": "dimen",
+                  "value": "10dp"
+                }
+              ],
+              "views": [
+                {
+                  "widget": "TextView",
+                  "properties": [
+                    {
+                      "name": "layout_width",
+                      "type": "dimen",
+                      "value": "wrap_content"
+                    },
+                    {
+                      "name": "layout_height",
+                      "type": "dimen",
+                      "value": "wrap_content"
+                    },
+                    {
+                      "name": "text",
+                      "type": "string",
+                      "value": "ZARDOZI"
+                    },
+                    {
+                      "name": "textColor",
+                      "type": "color",
+                      "value": "#EDE8BB"
+                    },
+                    {
+                      "name": "maxLines",
+                      "type": "value",
+                      "value": "1"
+                    },
+                    {
+                      "name": "custom_font",
+                      "type": "asset",
+                      "value": "TrajanPro-Regular.ttf"
+                    },
+                    {
+                      "name": "textSize",
+                      "type": "dimen",
+                      "value": "13sp"
+                    }
+                  ]
+                },
+                {
+                  "widget": "View",
+                  "properties": [
+                    {
+                      "name": "layout_width",
+                      "type": "dimen",
+                      "value": "1dp"
+                    },
+                    {
+                      "name": "layout_height",
+                      "type": "dimen",
+                      "value": "match_parent"
+                    },
+                    {
+                      "name": "layout_marginleft",
+                      "type": "dimen",
+                      "value": "5dp"
+                    },
+                    {
+                      "name": "background",
+                      "type": "color",
+                      "value": "#EDE8BB"
+                    }
+                  ]
+                },
+                {
+                  "widget": "TextView",
+                  "properties": [
+                    {
+                      "name": "layout_width",
+                      "type": "dimen",
+                      "value": "wrap_content"
+                    },
+                    {
+                      "name": "layout_height",
+                      "type": "dimen",
+                      "value": "wrap_content"
+                    },
+                    {
+                      "name": "text",
+                      "type": "string",
+                      "value": "TUSSAR"
+                    },
+                    {
+                      "name": "layout_marginleft",
+                      "type": "dimen",
+                      "value": "5dp"
+                    },
+                    {
+                      "name": "textColor",
+                      "type": "color",
+                      "value": "#EDE8BB"
+                    },
+                    {
+                      "name": "maxLines",
+                      "type": "value",
+                      "value": "1"
+                    },
+                    {
+                      "name": "custom_font",
+                      "type": "asset",
+                      "value": "TrajanPro-Regular.ttf"
+                    },
+                    {
+                      "name": "textSize",
+                      "type": "dimen",
+                      "value": "13sp"
+                    }
+                  ]
+                },
+                {
+                  "widget": "View",
+                  "properties": [
+                    {
+                      "name": "layout_width",
+                      "type": "dimen",
+                      "value": "1dp"
+                    },
+                    {
+                      "name": "layout_height",
+                      "type": "dimen",
+                      "value": "match_parent"
+                    },
+                    {
+                      "name": "layout_marginleft",
+                      "type": "dimen",
+                      "value": "5dp"
+                    },
+                    {
+                      "name": "background",
+                      "type": "color",
+                      "value": "#EDE8BB"
+                    }
+                  ]
+                },
+                {
+                  "widget": "TextView",
+                  "properties": [
+                    {
+                      "name": "layout_width",
+                      "type": "dimen",
+                      "value": "wrap_content"
+                    },
+                    {
+                      "name": "layout_height",
+                      "type": "dimen",
+                      "value": "wrap_content"
+                    },
+                    {
+                      "name": "text",
+                      "type": "string",
+                      "value": "HANDWOVEN"
+                    },
+                    {
+                      "name": "layout_marginleft",
+                      "type": "dimen",
+                      "value": "5dp"
+                    },
+                    {
+                      "name": "textColor",
+                      "type": "color",
+                      "value": "#EDE8BB"
+                    },
+                    {
+                      "name": "maxLines",
+                      "type": "value",
+                      "value": "1"
+                    },
+                    {
+                      "name": "custom_font",
+                      "type": "asset",
+                      "value": "TrajanPro-Regular.ttf"
+                    },
+                    {
+                      "name": "textSize",
+                      "type": "dimen",
+                      "value": "13sp"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "widget": "RelativeLayout",
+      "properties": [
+        {
+          "name": "layout_width",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "layout_height",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "id",
+          "type": "ref",
+          "value": "relative_left"
+        },
+        {
+          "name": "background",
+          "type": "color",
+          "value": "#ffffff"
+        }
+      ],
+      "views": [
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "linear_one"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "padding_bottom",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "padding_top",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "background",
+              "type": "color",
+              "value": "#FFC335"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "vertical"
+            },
+            {
+              "name": "layout_centerVertical",
+              "type": "boolean",
+              "value": "true"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#ffffff"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "100sp"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "ZARDOZI"
+                },
+                {
+                  "name": "include_font_padding",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Bold.ttf"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#ffffff"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "20sp"
+                },
+                {
+                  "name": "include_font_padding",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "EMBROIDERED PANELLED SHORT TOP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "linear_two"
+            },
+            {
+              "name": "layout_below",
+              "type": "ref",
+              "value": "linear_one"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_marginTop",
+              "type": "dimen",
+              "value": "15dp"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "vertical"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "20sp"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "THE OCCASION COLLECTION"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "THE QUIET WHISPER AT A FORMAL EVENING"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "20sp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "horizontal"
+            },
+            {
+              "name": "layout_alignParentBottom",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_centerhorizontal",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_marginBottom",
+              "type": "dimen",
+              "value": "15dp"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "ZARDOZI"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "maxLines",
+                  "type": "value",
+                  "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "13sp"
+                }
+              ]
+            },
+            {
+              "widget": "View",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "1dp"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "match_parent"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "background",
+                  "type": "color",
+                  "value": "#000000"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "TUSSAR"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "maxLines",
+                  "type": "value",
+                  "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "13sp"
+                }
+              ]
+            },
+            {
+              "widget": "View",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "1dp"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "match_parent"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "background",
+                  "type": "color",
+                  "value": "#000000"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "HANDWOVEN"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "maxLines",
+                  "type": "value",
+                  "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "13sp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "img_one"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_marginTop",
+              "type": "dimen",
+              "value": "25dp"
+            },
+            {
+              "name": "layout_marginBottom",
+              "type": "dimen",
+              "value": "25dp"
+            },
+            {
+              "name": "padding_right",
+              "type": "dimen",
+              "value": "30dp"
+            },
+            {
+              "name": "gravity",
+              "type": "dimen",
+              "value": "left"
+            },
+            {
+              "name": "layout_alignParentRight",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "adjustviewbounds",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "http://res.cloudinary.com/kartrocket/image/fetch/w_1044,q_auto,h_1720,c_pad,f_auto,fl_progressive/http%3A%2F%2Fkartrocket-mtp.s3.amazonaws.com%2Fall-stores%2Fimage_gauravguptaonline%2Fdata%2FJKOTF-25-A.png"
+            }
+          ]
+        },
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "img_two"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "layout_alignParentRight",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_alignParentTop",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
+            },
+            {
+              "name": "layout_margin",
+              "type": "dimen",
+              "value": "50dp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "widget": "RelativeLayout",
+      "properties": [
+        {
+          "name": "layout_width",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "layout_height",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "id",
+          "type": "ref",
+          "value": "relative_left"
+        },
+        {
+          "name": "background",
+          "type": "color",
+          "value": "#ffffff"
+        }
+      ],
+      "views": [
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "linear_one"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "padding_bottom",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "padding_top",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "background",
+              "type": "color",
+              "value": "#FFC335"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "vertical"
+            },
+            {
+              "name": "layout_centerVertical",
+              "type": "boolean",
+              "value": "true"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#ffffff"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "100sp"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "ZARDOZI"
+                },
+                {
+                  "name": "include_font_padding",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Bold.ttf"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#ffffff"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "20sp"
+                },
+                {
+                  "name": "include_font_padding",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "EMBROIDERED LONG FLARED KURTA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "linear_two"
+            },
+            {
+              "name": "layout_below",
+              "type": "ref",
+              "value": "linear_one"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_marginTop",
+              "type": "dimen",
+              "value": "15dp"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "vertical"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "20sp"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "THE OCCASION COLLECTION"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "THE QUIET WHISPER AT A FORMAL EVENING"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "20sp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "horizontal"
+            },
+            {
+              "name": "layout_alignParentBottom",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_centerhorizontal",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_marginBottom",
+              "type": "dimen",
+              "value": "15dp"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "ZARDOZI"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "maxLines",
+                  "type": "value",
+                  "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "13sp"
+                }
+              ]
+            },
+            {
+              "widget": "View",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "1dp"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "match_parent"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "background",
+                  "type": "color",
+                  "value": "#000000"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "TUSSAR"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "maxLines",
+                  "type": "value",
+                  "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "13sp"
+                }
+              ]
+            },
+            {
+              "widget": "View",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "1dp"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "match_parent"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "background",
+                  "type": "color",
+                  "value": "#000000"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "HANDWOVEN"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "maxLines",
+                  "type": "value",
+                  "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "13sp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "img_one"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_marginTop",
+              "type": "dimen",
+              "value": "25dp"
+            },
+            {
+              "name": "layout_marginBottom",
+              "type": "dimen",
+              "value": "25dp"
+            },
+            {
+              "name": "padding_right",
+              "type": "dimen",
+              "value": "30dp"
+            },
+            {
+              "name": "gravity",
+              "type": "dimen",
+              "value": "left"
+            },
+            {
+              "name": "layout_alignParentRight",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "adjustviewbounds",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "http://cdn.careers.page.com/sites/default/files/09_woman_me_0.png"
+            }
+          ]
+        },
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "img_two"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "layout_alignParentRight",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_alignParentTop",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
+            },
+            {
+              "name": "layout_margin",
+              "type": "dimen",
+              "value": "50dp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "widget": "RelativeLayout",
+      "properties": [
+        {
+          "name": "layout_width",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "layout_height",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "id",
+          "type": "ref",
+          "value": "relative_left"
+        },
+        {
+          "name": "background",
+          "type": "color",
+          "value": "#ffffff"
+        }
+      ],
+      "views": [
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "linear_one"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "padding_bottom",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "padding_top",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "background",
+              "type": "color",
+              "value": "#FFC335"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "vertical"
+            },
+            {
+              "name": "layout_centerVertical",
+              "type": "boolean",
+              "value": "true"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#ffffff"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "100sp"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "ZARDOZI"
+                },
+                {
+                  "name": "include_font_padding",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Bold.ttf"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#ffffff"
+                },
+                {
+                  "name": "include_font_padding",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "20sp"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "EMBROIDERED CHANDERI SLEEVE TUNIC"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "linear_two"
+            },
+            {
+              "name": "layout_below",
+              "type": "ref",
+              "value": "linear_one"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_marginTop",
+              "type": "dimen",
+              "value": "15dp"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "vertical"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "20sp"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "THE OCCASION COLLECTION"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "layout_marginLeft",
+                  "type": "dimen",
+                  "value": "105dp"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "THE QUIET WHISPER AT A FORMAL EVENING"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "20sp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "horizontal"
+            },
+            {
+              "name": "layout_alignParentBottom",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_centerhorizontal",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_marginBottom",
+              "type": "dimen",
+              "value": "15dp"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "ZARDOZI"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "maxLines",
+                  "type": "value",
+                  "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "13sp"
+                }
+              ]
+            },
+            {
+              "widget": "View",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "1dp"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "match_parent"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "background",
+                  "type": "color",
+                  "value": "#000000"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "TUSSAR"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "maxLines",
+                  "type": "value",
+                  "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "13sp"
+                }
+              ]
+            },
+            {
+              "widget": "View",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "1dp"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "match_parent"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "background",
+                  "type": "color",
+                  "value": "#000000"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "HANDWOVEN"
+                },
+                {
+                  "name": "layout_marginleft",
+                  "type": "dimen",
+                  "value": "5dp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "maxLines",
+                  "type": "value",
+                  "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Regular.ttf"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "13sp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "img_one"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_marginTop",
+              "type": "dimen",
+              "value": "25dp"
+            },
+            {
+              "name": "layout_marginBottom",
+              "type": "dimen",
+              "value": "25dp"
+            },
+            {
+              "name": "padding_right",
+              "type": "dimen",
+              "value": "30dp"
+            },
+            {
+              "name": "gravity",
+              "type": "dimen",
+              "value": "left"
+            },
+            {
+              "name": "layout_alignParentRight",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "adjustviewbounds",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "http://cdn.careers.page.com/sites/default/files/04_woman_na%281%29_0.png"
+            }
+          ]
+        },
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "id",
+              "type": "ref",
+              "value": "img_two"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "layout_alignParentRight",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_alignParentTop",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
+            },
+            {
+              "name": "layout_margin",
+              "type": "dimen",
+              "value": "50dp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "widget": "RelativeLayout",
+      "properties": [
+        {
+          "name": "layout_width",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "layout_height",
+          "type": "dimen",
+          "value": "match_parent"
+        }
+      ],
+      "views": [
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "https://www.colourbox.com/preview/4234014-old-paper-texture.jpg"
+            },
+            {
+              "name": "scaleType",
+              "type": "string",
+              "value": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "border",
+              "type": "color",
+              "value": "#ffffff",
+              "radius": "5dp"
+            },
+            {
+              "name": "layout_margin",
+              "type": "dimen",
+              "value": "100dp"
+            }
+          ]
+        },
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "50dp"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "https://pbs.twimg.com/profile_images/816524388040179712/QJdUxa2H.jpg"
+            },
+            {
+              "name": "layout_alignparentright",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_alignparenttop",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_margin",
+              "type": "dimen",
+              "value": "150dp"
+            }
+          ]
+        },
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "vertical"
+            },
+            {
+              "name": "layout_alignparentleft",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_centervertical",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_margin",
+              "type": "dimen",
+              "value": "150dp"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "DID YOU \nKNOW?"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "35sp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#ffffff"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Bold.ttf"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "LADY CURZON, VICERINE OF INDIA, WAS INSTRUMENTAL IN \nPROMOTING THE USE OF INDIAN EMBROIDERY IN \nWESTERN FASHION. \nHER PEACOCK GOWN, STITCHED OF GOLD CLOTH AND\nEMBROIDERED IN ZARDOZI WAS TREMENDOUS\nSENSATION AT HER CORONATION CEREMONY!"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "15sp"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#ffffff"
+                },
+                {
+                  "name": "layout_margintop",
+                  "type": "dimen",
+                  "value": "25dp"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "TrajanPro-Bold.ttf"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

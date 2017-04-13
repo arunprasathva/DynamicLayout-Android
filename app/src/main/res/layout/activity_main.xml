@@ -11,6 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
+    <com.minscapecomputing.dynamiccomponents.VerticalViewPager
+        android:id="@+id/verticalPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
     <ImageButton
         android:id="@+id/imgLeftArrow"
         android:layout_width="wrap_content"
@@ -33,6 +39,30 @@
         android:background="@android:color/transparent"
         android:padding="10dp"
         android:src="@drawable/ic_arrow_right"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/imgTopArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:src="@drawable/ic_arrow_top"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/imgBottomArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:src="@drawable/ic_arrow_bottom"
         android:visibility="gone"/>
 
     <FrameLayout
