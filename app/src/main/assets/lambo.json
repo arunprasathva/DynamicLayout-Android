@@ -1,0 +1,632 @@
+{
+  "pager_orientation": "vertical",
+  "children": [
+    {
+      "widget": "RelativeLayout",
+      "properties": [
+        {
+          "name": "layout_width",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "layout_height",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "background",
+          "type": "color",
+          "value": "#ffffff"
+        }
+      ],
+      "views": [
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/homepage/slider/performante-video/slider-video-hurcan-performante.jpg"
+            },
+            {
+              "name": "scaleType",
+              "type": "string",
+              "value": "FIT_XY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "widget": "RelativeLayout",
+      "properties": [
+        {
+          "name": "layout_width",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "layout_height",
+          "type": "dimen",
+          "value": "match_parent"
+        }
+      ],
+      "views": [
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/homepage/subslider/subslider-film-brand-1.jpg"
+            },
+            {
+              "name": "scaleType",
+              "type": "string",
+              "value": "FIT_XY"
+            },
+            {
+              "name": "layout_above",
+              "type": "",
+              "value": "bottomLayout"
+            }
+          ]
+        },
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "id",
+              "type": "",
+              "value": "bottomLayout"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_alignparentbottom",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "vertical"
+            },
+            {
+              "name": "layout_marginbottom",
+              "type": "integer",
+              "value": "15"
+            },
+            {
+              "name": "layout_margintop",
+              "type": "integer",
+              "value": "25"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_gravity",
+                  "type": "string",
+                  "value": "center_horizontal"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "textSize",
+                  "type": "dimen",
+                  "value": "30sp"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "LAMBORGHINI WORLD"
+                },
+                {
+                  "name": "include_font_padding",
+                  "type": "boolean",
+                  "value": false
+                },
+                {
+                  "name": "textstyle",
+                  "type": "integer",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "widget": "View",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "120"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "3"
+                },
+                {
+                  "name": "layout_gravity",
+                  "type": "string",
+                  "value": "center_horizontal"
+                },
+                {
+                  "name": "background",
+                  "type": "color",
+                  "value": "#000000"
+                },
+                {
+                  "name": "layout_margintop",
+                  "type": "integer",
+                  "value": "5"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "widget": "LinearLayout",
+      "properties": [
+        {
+          "name": "layout_width",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "layout_height",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "orientation",
+          "type": "string",
+          "value": "horizontal"
+        }
+      ],
+      "views": [
+        {
+          "widget": "GridView",
+          "properties": [
+            {
+              "name": "id",
+              "type": "",
+              "value": "gridView"
+            },
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "320"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "wrap_content"
+            },
+            {
+              "name": "layout_gravity",
+              "type": "string",
+              "value": "center_vertical"
+            },
+            {
+              "name": "numColumns",
+              "type": "integer",
+              "value": "2"
+            },
+            {
+              "name": "array",
+              "type": "",
+              "array": [
+                {
+                  "video_uri": "https://d2w4f1uwlq2g3.cloudfront.net/live/tenant_cdn_content/S1601001/prod_catalog/video/ethnic_wear_500.mp4",
+                  "content_uri": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/img-gallery%201-huracan-performante.jpg",
+                  "thumb_image": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/thumb%201-huracan-performante.jpg",
+                  "type": "video",
+                  "width": "710",
+                  "height": "750",
+                  "align": "5|80"
+                },
+                {
+                  "video_uri": "",
+                  "content_uri": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/img%20gallery%205-huracan-performante.jpg",
+                  "type": "image",
+                  "thumb_image": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/thumb%205-huracan-performante.jpg"
+                },
+                {
+                  "video_uri": "https://d2w4f1uwlq2g3.cloudfront.net/live/tenant_cdn_content/S1601001/prod_catalog/video/ethnic_wear_500.mp4",
+                  "content_uri": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/img-forged-huracan-performante.jpg",
+                  "type": "video",
+                  "thumb_image": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/thumb-forged-huracan-performante.jpg",
+                  "width": "510",
+                  "height": "300",
+                  "align": "5|48"
+                },
+                {
+                  "content_uri": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/aventador/aventador-coupe/gallery/avantador-coupe-est-3.jpg",
+                  "video_uri": "",
+                  "type": "image",
+                  "thumb_image": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/aventador/aventador-coupe/gallery/thumbnail/avantador-coupe-est-3.jpg"
+                },
+                {
+                  "content_uri": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/aventador/aventador-s/gallery/aventador-s-1.jpg",
+                  "video_uri": "",
+                  "type": "image",
+                  "thumb_image": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/aventador/aventador-s/gallery/aventador-s-thumb%201.jpg"
+                },
+                {
+                  "content_uri": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/aventador/aventador-roadster/gallery/aventador-roadster-est-4.jpg",
+                  "video_uri": "",
+                  "type": "image",
+                  "thumb_image": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/aventador/aventador-roadster/gallery/thumbs/aventador-roadster-est-4.jpg"
+                },
+                {
+                  "content_uri": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/news/aventador%20s/aventador-S-video.jpg",
+                  "video_uri": "https://d2w4f1uwlq2g3.cloudfront.net/live/tenant_cdn_content/S1601001/prod_catalog/video/ethnic_wear_500.mp4",
+                  "type": "video",
+                  "thumb_image": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/news/aventador%20s/aventador-S-video_thumb.jpg",
+                  "width": "510",
+                  "height": "300",
+                  "align": "5|80"
+                },
+                {
+                  "content_uri": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-rwd/gallery/Huracan_RWD_3.jpg",
+                  "video_uri": "",
+                  "type": "image",
+                  "thumb_image": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-rwd/gallery/thumb/Huracan_RWD_3.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "widget": "RelativeLayout",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "match_parent"
+            }
+          ],
+          "views": [
+            {
+              "widget": "ImageView",
+              "properties": [
+                {
+                  "name": "id",
+                  "type": "",
+                  "value": "thumbImage"
+                },
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "match_parent"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "match_parent"
+                },
+                {
+                  "name": "src",
+                  "type": "uri",
+                  "value": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/img-gallery%201-huracan-performante.jpg"
+                },
+                {
+                  "name": "scaleType",
+                  "type": "string",
+                  "value": "FIT_XY"
+                }
+              ]
+            },
+            {
+              "widget": "ImageView",
+              "properties": [
+                {
+                  "name": "id",
+                  "type": "",
+                  "value": "playVideo"
+                },
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "src",
+                  "type": "ref",
+                  "value": "@drawable/ic_beacon_play"
+                },
+                {
+                  "name": "layout_centerInParent",
+                  "type": "boolean",
+                  "value": "true"
+                },
+                {
+                  "name": "visibility",
+                  "type": "string",
+                  "value": "gone"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "widget": "RelativeLayout",
+      "properties": [
+        {
+          "name": "layout_width",
+          "type": "dimen",
+          "value": "match_parent"
+        },
+        {
+          "name": "layout_height",
+          "type": "dimen",
+          "value": "match_parent"
+        }
+      ],
+      "views": [
+        {
+          "widget": "ImageView",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "src",
+              "type": "uri",
+              "value": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/img-gallery%201-huracan-performante.jpg"
+            },
+            {
+              "name": "scaleType",
+              "type": "string",
+              "value": "FIT_XY"
+            }
+          ]
+        },
+        {
+          "widget": "LinearLayout",
+          "properties": [
+            {
+              "name": "layout_width",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "layout_height",
+              "type": "dimen",
+              "value": "match_parent"
+            },
+            {
+              "name": "orientation",
+              "type": "string",
+              "value": "vertical"
+            },
+            {
+              "name": "layout_alignparentleft",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_alignparenttop",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "layout_margin",
+              "type": "integer",
+              "value": "100"
+            },
+            {
+              "name": "layout_marginright",
+              "type": "integer",
+              "value": "300"
+            }
+          ],
+          "views": [
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "AD PERSONAM"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#ffffff"
+                },
+                {
+                  "name": "textsize",
+                  "type": "dimen",
+                  "value": "22"
+                },
+                {
+                  "name": "textstyle",
+                  "type": "integer",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "widget": "TextView",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "The Ad Personam customisation program is available for the Huracán and Aventador, giving customers the chance to create their own personal Lamborghini, making it extra special and meeting any wish. There is an infinity of  possible combinations, from the colours to the materials: from the logo on the seat that may be hand stitched instead of branded, to the initials stitched inside the vehicle’s interior, or even a custom colour, all meeting the company’s exacting standards of quality."
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#ffffff"
+                },
+                {
+                  "name": "textsize",
+                  "type": "dimen",
+                  "value": "18"
+                },
+                {
+                  "name": "layout_margintop",
+                  "type": "integer",
+                  "value": "50"
+                }
+              ]
+            },
+            {
+              "widget": "Button",
+              "properties": [
+                {
+                  "name": "layout_width",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "layout_height",
+                  "type": "dimen",
+                  "value": "wrap_content"
+                },
+                {
+                  "name": "id",
+                  "type": "",
+                  "value": "buttonClick"
+                },
+                {
+                  "name": "bounce",
+                  "type": "",
+                  "value": "catalogue"
+                },
+                {
+                  "name": "text",
+                  "type": "string",
+                  "value": "DISCOVER MORE >"
+                },
+                {
+                  "name": "background",
+                  "type": "color",
+                  "value": "#DFB400"
+                },
+                {
+                  "name": "textColor",
+                  "type": "color",
+                  "value": "#ffffff"
+                },
+                {
+                  "name": "minHeight",
+                  "type": "dimen",
+                  "value": "0"
+                },
+                {
+                  "name": "minWidth",
+                  "type": "dimen",
+                  "value": "0"
+                },
+                {
+                  "name": "padding",
+                  "type": "dimen",
+                  "value": "10"
+                },
+                {
+                  "name": "textsize",
+                  "type": "dimen",
+                  "value": "18"
+                },
+                {
+                  "name": "layout_margintop",
+                  "type": "integer",
+                  "value": "40"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

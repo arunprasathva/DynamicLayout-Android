@@ -16,7 +16,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:label="INFOCUS - CARVANCRAFT"
+            android:label="INFOCUS - LAMBORGHINI"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

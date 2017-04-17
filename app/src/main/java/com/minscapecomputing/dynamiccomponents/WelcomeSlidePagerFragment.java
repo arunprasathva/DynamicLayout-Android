@@ -3,7 +3,9 @@ package com.minscapecomputing.dynamiccomponents;
 import com.avocarrot.json2view.DynamicProperty;
 import com.avocarrot.json2view.DynamicView;
 import com.avocarrot.json2view.DynamicViewId;
+import com.squareup.picasso.Picasso;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -16,10 +18,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.GridView;
+import android.widget.ImageView;
 
 /**
  * Created by Arun on 08-08-2016.
@@ -67,7 +72,7 @@ public class WelcomeSlidePagerFragment extends Fragment {
                                 DynamicProperty dynamicProperty = (DynamicProperty) v.getTag();
                                 Bundle bundle = new Bundle();
 //                                bundle.putString("VideoUrl", v.getTag().toString());
-                                bundle.putSerializable("VideoUrl", dynamicProperty.getValueString());
+                                bundle.putString("VideoUrl", dynamicProperty.getValueString());
                                 bundle.putString("page", "custom");
                                 if (dynamicProperty.getVideoHeight() > 0) {
                                     bundle.putInt("height", dynamicProperty.getVideoHeight());
@@ -92,6 +97,63 @@ public class WelcomeSlidePagerFragment extends Fragment {
                             startActivity(new Intent(activity, SecondActivity.class));
                         }
                     });
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            try {
+                if (((ClickViewHolder) sampleView.getTag()).thumbImage != null) {
+                    ((ClickViewHolder) sampleView.getTag()).thumbImage.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            JSONObject item = (JSONObject) v.getTag();
+                            if (!TextUtils.isEmpty(item.optString("video_uri"))) {
+                                Bundle bundle = new Bundle();
+                                bundle.putString("VideoUrl", item.optString("video_uri"));
+                                bundle.putString("page", "custom");
+                                if (!TextUtils.isEmpty(item.optString("height"))) {
+                                    bundle.putInt("height", Integer.parseInt(item.optString("height")));
+                                    bundle.putInt("width", Integer.parseInt(item.optString("width")));
+                                }
+                                bundle.putString("align", item.optString("align"));
+                                VideoDialogFragment videoDialogFragment = VideoDialogFragment.newInstance(bundle);
+                                videoDialogFragment.show(getFragmentManager(), "Video View Fragment");
+                            }
+                        }
+                    });
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            try {
+                if (((ClickViewHolder) sampleView.getTag()).gridView != null) {
+
+                    View view = ((ClickViewHolder) sampleView.getTag()).gridView;
+                    JSONArray jsonArray = new JSONArray(view.getTag().toString());
+                    final GridAdapter gridAdapter = new GridAdapter(activity, jsonArray);
+                    gridAdapter.setVideoPlayListener(new GridAdapter.VideoPlayListener() {
+                        @Override
+                        public void onVideoPlayClicked(JSONObject item, boolean isVideo) {
+                            if (((ClickViewHolder) sampleView.getTag()).thumbImage != null) {
+
+                                View imageView = ((ClickViewHolder) sampleView.getTag()).thumbImage;
+                                imageView.setTag(item);
+                                Picasso.with(activity)
+                                        .load(item.optString("content_uri"))
+                                        .placeholder(R.drawable.ic_place_holder)
+                                        .error(R.drawable.no_image)
+                                        .into((ImageView) (imageView));
+
+                                if (((ClickViewHolder) sampleView.getTag()).playVideo != null) {
+                                    ((ClickViewHolder) sampleView.getTag()).playVideo.setVisibility(isVideo ? View.VISIBLE : View.GONE);
+                                }
+                            }
+                        }
+                    });
+                    final GridView grid = ((GridView) (view));
+                    grid.setAdapter(gridAdapter);
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -153,6 +215,15 @@ public class WelcomeSlidePagerFragment extends Fragment {
 
         @DynamicViewId(id = "buttonClick")
         public View buttonClickableView;
+
+        @DynamicViewId(id = "gridView")
+        public View gridView;
+
+        @DynamicViewId(id = "thumbImage")
+        public View thumbImage;
+
+        @DynamicViewId(id = "playVideo")
+        public View playVideo;
 
         public ClickViewHolder() {
         }

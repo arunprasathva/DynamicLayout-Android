@@ -19,12 +19,12 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.text.TextUtils;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -45,7 +45,6 @@ public class DynamicHelper {
     public static String applyStyleProperties(View view, List<DynamicProperty> properties) {
         String id = "";
         for (DynamicProperty dynProp : properties) {
-            Log.e("TAG", "property name = " + dynProp.name);
             switch (dynProp.name) {
                 case ID: {
                     id = dynProp.getValueString();
@@ -115,10 +114,6 @@ public class DynamicHelper {
                     applyOrientation(view, dynProp);
                 }
                 break;
-                case VIDEO_URL: {
-                    applyTag(view, dynProp);
-                }
-                break;
                 case SUM_WEIGHT: {
                     applyWeightSum(view, dynProp);
                 }
@@ -179,6 +174,7 @@ public class DynamicHelper {
                     applyScaleY(view, dynProp);
                 }
                 break;
+                case VIDEO_URL:
                 case TAG: {
                     applyTag(view, dynProp);
                 }
@@ -257,6 +253,10 @@ public class DynamicHelper {
                         if (params instanceof ViewGroup.MarginLayoutParams) {
                             ((ViewGroup.MarginLayoutParams) params).bottomMargin = dynProp.getValueInt();
                         }
+                    }
+                    break;
+                    case ARRAY: {
+                        applyArrayAsTag(view, dynProp);
                     }
                     break;
                     case LAYOUT_ABOVE: {
@@ -394,6 +394,36 @@ public class DynamicHelper {
                             case FLOAT: {
                                 if (params instanceof LinearLayout.LayoutParams)
                                     ((LinearLayout.LayoutParams) params).weight = dynProp.getValueFloat();
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                    case NUMCOLUMNS: {
+                        switch (dynProp.type) {
+                            case INTEGER: {
+                                if (view instanceof GridView)
+                                    ((GridView) view).setNumColumns(dynProp.getValueInt());
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                    case VERTICALSPACING: {
+                        switch (dynProp.type) {
+                            case INTEGER: {
+                                if (view instanceof GridView)
+                                    ((GridView) view).setVerticalSpacing(dynProp.getValueInt());
+                            }
+                            break;
+                        }
+                    }
+                    break;
+                    case HORIZONTALSPACING: {
+                        switch (dynProp.type) {
+                            case INTEGER: {
+                                if (view instanceof GridView)
+                                    ((GridView) view).setHorizontalSpacing(dynProp.getValueInt());
                             }
                             break;
                         }
@@ -902,6 +932,13 @@ public class DynamicHelper {
      */
     public static void applyTag(View view, DynamicProperty property) {
         view.setTag(property);
+    }
+
+    /**
+     * add string as tag
+     */
+    public static void applyArrayAsTag(View view, DynamicProperty property) {
+        view.setTag(property.getArray());
     }
 
 

@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         init();
 
         try {
-            JSONObject jsonObject = new JSONObject(readFile("sample.json", this));
+            JSONObject jsonObject = new JSONObject(readFile("lambo.json", this));
             JSONArray jsonArray = jsonObject.optJSONArray("children");
             if (jsonArray != null) {
                 isHorizontal = !jsonObject.optString("pager_orientation").equalsIgnoreCase("vertical");
@@ -60,10 +60,12 @@ public class MainActivity extends AppCompatActivity {
                     verticalPager.setVisibility(View.GONE);
                     viewPager.setVisibility(View.VISIBLE);
                     setPagerAdapter(jsonArray, viewPager);
+                    findViewById(R.id.indicator).setVisibility(View.VISIBLE);
                 } else {
                     verticalPager.setVisibility(View.VISIBLE);
                     viewPager.setVisibility(View.GONE);
                     setPagerAdapter(jsonArray, verticalPager);
+                    findViewById(R.id.indicator).setVisibility(View.GONE);
                 }
             }
         } catch (JSONException je) {

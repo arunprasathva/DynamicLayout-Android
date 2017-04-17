@@ -139,9 +139,6 @@ public class DynamicView {
             if (jArray != null) {
                 for (int i = 0; i < jArray.length(); i++) {
                     DynamicProperty p = new DynamicProperty(jArray.getJSONObject(i));
-                    if (jArray.optJSONObject(i).getString("name").equalsIgnoreCase("INCLUDE_FONT_PADDING")) {
-                        Log.e("TAG", "property name = ");
-                    }
                     if (p.isValid())
                         properties.add(p);
                 }

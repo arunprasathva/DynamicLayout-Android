@@ -120,7 +120,11 @@ public class DynamicProperty {
         VIDEO_URL,
         TAG,
         FUNCTION,
-        CUSTOM_FONT
+        CUSTOM_FONT,
+        NUMCOLUMNS,
+        VERTICALSPACING,
+        HORIZONTALSPACING,
+        ARRAY
     }
 
     public NAME name;
@@ -130,6 +134,7 @@ public class DynamicProperty {
     private Object height;
     private Object width;
     private Object align;
+    private Object array;
 
     /**
      * @param v value to convert as string
@@ -275,10 +280,15 @@ public class DynamicProperty {
             align = convertValue(jsonObject.optString("align"));
         } catch (Exception e) {
         }
+        try {
+            if (jsonObject.has("array"))
+                array = convertValue(jsonObject.optJSONArray("array").toString());
+        } catch (Exception e) {
+        }
     }
 
     public boolean isValid() {
-        return value != null;
+        return value != null || array != null;
     }
 
     /**
@@ -329,7 +339,7 @@ public class DynamicProperty {
         else if (height instanceof String) {
             if (TextUtils.isEmpty(String.class.cast(height))) return 0;
             return Integer.parseInt(String.class.cast(height));
-        }else
+        } else
             return (int) height;
     }
 
@@ -345,6 +355,10 @@ public class DynamicProperty {
 
     public String getVideoAlign() {
         return (String) align;
+    }
+
+    public String getArray() {
+        return (String) array;
     }
 
     public String getValueFont() {
