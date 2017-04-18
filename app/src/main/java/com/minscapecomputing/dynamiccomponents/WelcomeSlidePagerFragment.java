@@ -108,17 +108,19 @@ public class WelcomeSlidePagerFragment extends Fragment {
                         @Override
                         public void onClick(View v) {
                             JSONObject item = (JSONObject) v.getTag();
-                            if (!TextUtils.isEmpty(item.optString("video_uri"))) {
-                                Bundle bundle = new Bundle();
-                                bundle.putString("VideoUrl", item.optString("video_uri"));
-                                bundle.putString("page", "custom");
-                                if (!TextUtils.isEmpty(item.optString("height"))) {
-                                    bundle.putInt("height", Integer.parseInt(item.optString("height")));
-                                    bundle.putInt("width", Integer.parseInt(item.optString("width")));
+                            if (item != null) {
+                                if (!TextUtils.isEmpty(item.optString("video_uri"))) {
+                                    Bundle bundle = new Bundle();
+                                    bundle.putString("VideoUrl", item.optString("video_uri"));
+                                    bundle.putString("page", "custom");
+                                    if (!TextUtils.isEmpty(item.optString("height"))) {
+                                        bundle.putInt("height", Integer.parseInt(item.optString("height")));
+                                        bundle.putInt("width", Integer.parseInt(item.optString("width")));
+                                    }
+                                    bundle.putString("align", item.optString("align"));
+                                    VideoDialogFragment videoDialogFragment = VideoDialogFragment.newInstance(bundle);
+                                    videoDialogFragment.show(getFragmentManager(), "Video View Fragment");
                                 }
-                                bundle.putString("align", item.optString("align"));
-                                VideoDialogFragment videoDialogFragment = VideoDialogFragment.newInstance(bundle);
-                                videoDialogFragment.show(getFragmentManager(), "Video View Fragment");
                             }
                         }
                     });

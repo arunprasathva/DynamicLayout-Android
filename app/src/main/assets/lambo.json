@@ -243,7 +243,7 @@
             {
               "name": "layout_width",
               "type": "dimen",
-              "value": "320"
+              "value": "340"
             },
             {
               "name": "layout_height",
@@ -440,7 +440,7 @@
             {
               "name": "src",
               "type": "uri",
-              "value": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/img-gallery%201-huracan-performante.jpg"
+              "value": "https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/res/drawable/paralleo.jpg"
             },
             {
               "name": "scaleType",
@@ -480,7 +480,7 @@
             {
               "name": "layout_margin",
               "type": "integer",
-              "value": "100"
+              "value": "50"
             },
             {
               "name": "layout_marginright",
@@ -510,7 +510,7 @@
                 {
                   "name": "textColor",
                   "type": "color",
-                  "value": "#ffffff"
+                  "value": "#000000"
                 },
                 {
                   "name": "textsize",
@@ -545,17 +545,17 @@
                 {
                   "name": "textColor",
                   "type": "color",
-                  "value": "#ffffff"
+                  "value": "#000000"
                 },
                 {
                   "name": "textsize",
                   "type": "dimen",
-                  "value": "18"
+                  "value": "15"
                 },
                 {
                   "name": "layout_margintop",
                   "type": "integer",
-                  "value": "50"
+                  "value": "40"
                 }
               ]
             },
@@ -611,11 +611,6 @@
                   "name": "padding",
                   "type": "dimen",
                   "value": "10"
-                },
-                {
-                  "name": "textsize",
-                  "type": "dimen",
-                  "value": "18"
                 },
                 {
                   "name": "layout_margintop",
