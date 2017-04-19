@@ -265,7 +265,7 @@
               "type": "",
               "array": [
                 {
-                  "video_uri": "https://d2w4f1uwlq2g3.cloudfront.net/live/tenant_cdn_content/S1601001/prod_catalog/video/ethnic_wear_500.mp4",
+                  "video_uri": "https://r1---sn-5jucgv5qc5oq-cagl.googlevideo.com/videoplayback?mime=video%2Fmp4&key=cms1&requiressl=yes&ratebypass=yes&source=youtube&dur=196.835&lmt=1472299162877349&id=o-AG-4m3s3d96Wa4TIENqNtQoEW3Y0YwO4t2-BZpOrLGht&ei=-u_2WJmpMoXs4QKx7oXYCQ&ipbits=0&expire=1492599898&pl=23&ip=106.51.39.215&sparams=dur,ei,expire,id,initcwndbps,ip,ipbits,itag,lmt,mime,mm,mn,ms,mv,pl,ratebypass,requiressl,source,upn&signature=3E1C8F9A902600BF1AEAB46B1B385428D134E6F1.0A7E37959C2666C3D3519A90C78E20D6A0EC56F9&itag=22&upn=A2lrC5c4Vfs&cms_redirect=yes&mm=31&mn=sn-5jucgv5qc5oq-cagl&ms=au&mt=1492576403&mv=m",
                   "content_uri": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/img-gallery%201-huracan-performante.jpg",
                   "thumb_image": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/thumb%201-huracan-performante.jpg",
                   "type": "video",

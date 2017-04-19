@@ -3,7 +3,6 @@ package com.minscapecomputing.dynamiccomponents;
 import com.viewpagerindicator.LinePageIndicator;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -51,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
         init();
 
-        try {
+        /*try {
             JSONObject jsonObject = new JSONObject(readFile("lambo.json", this));
             JSONArray jsonArray = jsonObject.optJSONArray("children");
             if (jsonArray != null) {
@@ -70,9 +69,9 @@ public class MainActivity extends AppCompatActivity {
             }
         } catch (JSONException je) {
             je.printStackTrace();
-        }
+        }*/
 
-//        getJSON("https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/assets/sample.json");
+        getJSON("https://raw.githubusercontent.com/arunprasathva/DynamicLayout-Android/master/app/src/main/assets/lambo.json");
     }
 
     private void getJSON(String URL) {
@@ -90,10 +89,12 @@ public class MainActivity extends AppCompatActivity {
                             verticalPager.setVisibility(View.GONE);
                             viewPager.setVisibility(View.VISIBLE);
                             setPagerAdapter(jsonArray, viewPager);
+                            findViewById(R.id.indicator).setVisibility(View.VISIBLE);
                         } else {
                             verticalPager.setVisibility(View.VISIBLE);
                             viewPager.setVisibility(View.GONE);
                             setPagerAdapter(jsonArray, verticalPager);
+                            findViewById(R.id.indicator).setVisibility(View.GONE);
                         }
                     }
                 } catch (Exception e) {
