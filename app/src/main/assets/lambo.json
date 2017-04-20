@@ -175,6 +175,11 @@
                   "name": "textstyle",
                   "type": "integer",
                   "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "Roboto-Bold.ttf"
                 }
               ]
             },
@@ -521,6 +526,11 @@
                   "name": "textstyle",
                   "type": "integer",
                   "value": "1"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "Roboto-Bold.ttf"
                 }
               ]
             },
@@ -556,6 +566,11 @@
                   "name": "layout_margintop",
                   "type": "integer",
                   "value": "40"
+                },
+                {
+                  "name": "custom_font",
+                  "type": "asset",
+                  "value": "OpenSans-Regular.ttf"
                 }
               ]
             },
